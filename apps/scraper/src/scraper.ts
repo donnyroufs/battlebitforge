@@ -34,6 +34,10 @@ export class Scraper {
       // The last two tables are different and not related at all
       tables.splice(-2);
 
+        function normalizeImage(url: string): string {
+          return url.substring(0, url.indexOf(".png") + 4);
+        }
+
       const weapons: ParsedWeapon[] = [];
       for (const table of tables) {
         const rows = table.querySelectorAll("tbody tr");
@@ -43,6 +47,7 @@ export class Scraper {
             return item.innerHTML;
           });
         });
+
 
         const parser = new DOMParser();
         const parsedResult = items.map((item) => {
@@ -57,14 +62,15 @@ export class Scraper {
               detailUrl:
                 parser.parseFromString(nameEl, "text/html").querySelector("a")
                   ?.href ?? "",
-              image:
+              image: normalizeImage(
                 parser
                   .parseFromString(imageEl, "text/html")
                   .querySelector("img")
                   ?.getAttribute("data-src") ??
-                parser
-                  .parseFromString(imageEl, "text/html")
-                  .querySelector("img")!.src,
+                  parser
+                    .parseFromString(imageEl, "text/html")
+                    .querySelector("img")!.src
+              ),
               rank: Number(rankEl.replace(/\n/g, "")),
             };
           } else {
@@ -76,14 +82,15 @@ export class Scraper {
               detailUrl:
                 parser.parseFromString(nameEl, "text/html").querySelector("a")
                   ?.href ?? "",
-              image:
+              image: normalizeImage(
                 parser
                   .parseFromString(imageEl, "text/html")
                   .querySelector("img")
                   ?.getAttribute("data-src") ??
-                parser
-                  .parseFromString(imageEl, "text/html")
-                  .querySelector("img")!.src,
+                  parser
+                    .parseFromString(imageEl, "text/html")
+                    .querySelector("img")!.src
+              ),
               rank: Number(rankEl.replace(/\n/g, "")),
             };
           }

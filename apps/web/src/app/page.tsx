@@ -37,7 +37,7 @@ export default async function Page() {
         <section className="grid grid-cols-6 gap-x-4 gap-y-10">
           {weapons.map((x) => (
             <div className="text-white">
-              <img src={x.imageUrl} className="w-64" />
+              <img src={x.imageUrl} className="w-52" alt={x.name} />
               <h2 className="text-1xl font-bold mt-4">{x.name}</h2>
               <p className="text-slate-400 break-words">
                 {groupedAttachments[x.name]?.join(", ")}
