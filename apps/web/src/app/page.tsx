@@ -9,7 +9,7 @@ export default async function Page() {
     <>
       <Header text="Web" />
       <hr />
-      <pre>{JSON.stringify(users, null, 2)}</pre>
+      <pre className="text-red-500">{JSON.stringify(users, null, 2)}</pre>
       <MyLoadouts />
     </>
   );
