@@ -1,4 +1,4 @@
-import { Header } from "@bbforge/ui";
+import { Header } from "@bbforge/design-system";
 import { MyLoadouts } from "@bbforge/loadouts";
 import { prisma } from "@bbforge/database";
 

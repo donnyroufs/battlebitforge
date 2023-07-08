@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   transpilePackages: [
-    "@bbforge/ui",
+    "@bbforge/design-system",
     "@bbforge/database",
     "@bbforge/auth",
     "@bbforge/loadouts",

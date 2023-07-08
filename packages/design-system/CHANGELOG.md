@@ -1,4 +1,4 @@
-# @bbforge/ui
+# @bbforge/design-system
 
 ## 0.0.1
 

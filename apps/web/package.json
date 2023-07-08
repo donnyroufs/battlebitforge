@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@bbforge/database": "*",
-    "@bbforge/ui": "*",
+    "@bbforge/design-system": "*",
     "@bbforge/auth": "*",
     "next": "^13.4.1",
     "next-auth": "^4.22.1",
