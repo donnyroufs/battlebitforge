@@ -1,0 +1,30 @@
+{
+  "name": "bbforge",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset:status": "changeset status --verbose",
+    "changeset:version": "changeset version",
+    "changeset:tag": "changeset tag"
+  },
+  "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
+    "@changesets/cli": "^2.26.2",
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
+  },
+  "packageManager": "yarn@1.22.10",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": "18"
+  }
+}
