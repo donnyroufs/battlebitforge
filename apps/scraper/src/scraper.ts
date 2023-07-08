@@ -3,6 +3,7 @@ import fs from "fs";
 
 type ParsedWeapon = {
   name: string;
+  detailUrl: string;
   rank: number;
   image: string;
 };
@@ -13,7 +14,7 @@ type ParsedAttachment = {
 
 type ParsedItem = {
   weapon: ParsedWeapon;
-  attachment: ParsedAttachment;
+  attachments: ParsedAttachment[];
 };
 
 type ParseResult = ParsedItem[];
@@ -52,6 +53,9 @@ export class Scraper {
             name:
               parser.parseFromString(nameEl, "text/html").querySelector("a")
                 ?.innerText ?? "",
+            detailUrl:
+              parser.parseFromString(nameEl, "text/html").querySelector("a")
+                ?.href ?? "",
             image:
               parser
                 .parseFromString(imageEl, "text/html")
@@ -67,6 +71,9 @@ export class Scraper {
             name:
               parser.parseFromString(nameEl, "text/html").querySelector("a")
                 ?.innerText ?? "",
+            detailUrl:
+              parser.parseFromString(nameEl, "text/html").querySelector("a")
+                ?.href ?? "",
             image:
               parser
                 .parseFromString(imageEl, "text/html")
@@ -80,17 +87,34 @@ export class Scraper {
       });
     });
 
+    // for (const weapon of result) {
+    //   await page.goto(weapon.detailUrl);
+
+    //   await page.evaluate(() => {
+    //     const contents = document.querySelectorAll("wds-tab__content");
+    //     x = contents;
+    //   });
+    // }
+
+    const final: ParseResult = [];
+
+    for (const weapon of result) {
+      await page.goto(weapon.detailUrl);
+      const res = await page.evaluate(() => {
+        const contents = document.querySelectorAll(".wds-tab__content a");
+        return Array.from(contents).map((x) => x.innerHTML);
+      });
+
+      final.push({
+        weapon,
+        attachments: res.map((name) => ({ name })),
+      });
+    }
+
+    console.log(final);
+
     await browser.close();
-
-    console.log(result);
+    // console.log(result);
     return [];
-  }
-
-  private onRow(row: HTMLElement): HTMLElement[] {
-    return Array.from(row.querySelectorAll("td"));
-  }
-
-  private onCell(cell: HTMLElement): string {
-    return cell!.querySelector("a")!.innerHTML;
   }
 }
