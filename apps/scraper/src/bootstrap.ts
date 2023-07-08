@@ -1,10 +1,11 @@
 import puppeteer from "puppeteer";
+import fs from "fs";
 import { Scraper } from "./scraper";
 
 export async function bootstrap() {
   const scraper = new Scraper(puppeteer);
 
-  await scraper.scrape();
+  const result = await scraper.scrape();
 }
 
 bootstrap();
