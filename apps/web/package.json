@@ -9,17 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bbforge/database": "*",
+    "@bbforge/ui": "*",
+    "@bbforge/auth": "*",
     "next": "^13.4.1",
+    "next-auth": "^4.22.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@bbforge/ui": "*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@bbforge/eslint-config-custom": "*",
+    "@bbforge/tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
-    "@bbforge/eslint-config-custom": "*",
-    "@bbforge/tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }
