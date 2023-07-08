@@ -1,11 +1,8 @@
 import { MyLoadouts } from "@bbforge/loadouts";
-import { prisma } from "@bbforge/database";
 import { Logout } from "@bbforge/auth";
 import { Button } from "@bbforge/design-system";
 
 export default async function Page() {
-  const users = await prisma.user.findMany();
-
   return (
     <>
       <div className="container mx-auto">
