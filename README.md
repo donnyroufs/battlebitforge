@@ -2,6 +2,12 @@
 
 Create and share loadouts
 
+## How to run
+
+1. Create .env and copy paste .env.example
+2. Create oauth credentials for Discord
+3. docker-composeup -d && yarn && yarn dev
+
 ## Release
 
 **Requires changesets**  
