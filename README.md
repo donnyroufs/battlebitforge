@@ -18,4 +18,4 @@ git commit (make sure to prefix with: `release`)
 yarn changeset:tag 
 
 **Push the release:**  
-git push --all
+git push && git push --tags
