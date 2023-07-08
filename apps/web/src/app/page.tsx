@@ -1,4 +1,5 @@
-import { Button, Header } from "@bbforge/ui";
+import { Header } from "@bbforge/ui";
+import { MyLoadouts } from "@bbforge/loadouts";
 import { prisma } from "@bbforge/database";
 
 export default async function Page() {
@@ -9,7 +10,7 @@ export default async function Page() {
       <Header text="Web" />
       <hr />
       <pre>{JSON.stringify(users, null, 2)}</pre>
-      <Button />
+      <MyLoadouts />
     </>
   );
 }
