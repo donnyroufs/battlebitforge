@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@bbforge/database": "*",
+    "@bbforge/design-system": "*",
     "@next-auth/prisma-adapter": "^1.0.7",
     "next-auth": "^4.22.1"
   },
