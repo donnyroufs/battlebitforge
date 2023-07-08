@@ -23,7 +23,7 @@ export class Scraper {
 
   public async scrape(): Promise<ParsedItem[]> {
     const browser = await this._puppeteer.launch({
-      headless: false,
+      headless: true,
     });
     const page = await browser.newPage();
     await page.goto("https://battlebit.fandom.com/wiki/Weapons");

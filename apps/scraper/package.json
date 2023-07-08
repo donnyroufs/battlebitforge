@@ -8,6 +8,9 @@
     "scrape": "ts-node ./src/bootstrap.ts"
   },
   "dependencies": {
+    "@bbforge/database": "*",
+    "@prisma/client": "^4.16.2",
+    "prisma": "^4.16.2",
     "puppeteer": "^20.8.0"
   },
   "devDependencies": {
