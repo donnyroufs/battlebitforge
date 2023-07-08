@@ -18,6 +18,7 @@ type ParsedItem = {
 
 type ParseResult = ParsedItem[];
 
+// TODO: Attachment Category!
 export class Scraper {
   public constructor(private readonly _puppeteer: typeof puppeteer) {}
 

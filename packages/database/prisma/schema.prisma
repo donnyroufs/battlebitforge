@@ -44,25 +44,32 @@ model VerificationToken {
 }
 
 model Weapon {
-  name        String       @unique
-  rank        Int
-  imageUrl    String
+  name     String @unique
+  rank     Int
+  imageUrl String
+
+  attachments WeaponAttachments[]
 }
 
 model Attachment {
-  name    String   @unique
+  name String @unique
+
+  weapons WeaponAttachments[]
 }
 
 model WeaponAttachments {
-  weaponName String
+  weaponName     String
   attachmentName String
+
+  weapon         Weapon     @relation(fields: [weaponName], references: [name])
+  attachment     Attachment @relation(fields: [attachmentName], references: [name])
 
   @@id([weaponName, attachmentName])
   @@unique([weaponName, attachmentName])
 }
 
 model ScrapeHistory {
-  id Int @id @default(autoincrement())
+  id   Int    @id @default(autoincrement())
   data Json[]
 
   // changes Json

@@ -26,3 +26,9 @@ CREATE UNIQUE INDEX "Attachment_name_key" ON "Attachment"("name");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "WeaponAttachments_weaponName_attachmentName_key" ON "WeaponAttachments"("weaponName", "attachmentName");
+
+-- AddForeignKey
+ALTER TABLE "WeaponAttachments" ADD CONSTRAINT "WeaponAttachments_weaponName_fkey" FOREIGN KEY ("weaponName") REFERENCES "Weapon"("name") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "WeaponAttachments" ADD CONSTRAINT "WeaponAttachments_attachmentName_fkey" FOREIGN KEY ("attachmentName") REFERENCES "Attachment"("name") ON DELETE RESTRICT ON UPDATE CASCADE;
