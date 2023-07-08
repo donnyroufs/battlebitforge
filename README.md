@@ -2,7 +2,17 @@
 
 Create and share loadouts
 
-## Release
+## How to run
+
+1. Create .env and copy paste .env.example
+2. Create oauth credentials for Discord
+3. docker-compose up -d && yarn && yarn dev
+
+## Merge Requests
+
+* Should contain a changeset
+
+## Release (currently we deploy every push into main)
 
 **Requires changesets**  
 You can check the current release with `yarn changeset:status`.
@@ -18,4 +28,4 @@ git commit (make sure to prefix with: `release`)
 yarn changeset:tag 
 
 **Push the release:**  
-git push --all
+git push && git push --tags

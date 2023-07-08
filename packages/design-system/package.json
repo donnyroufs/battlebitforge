@@ -1,9 +1,9 @@
 {
-  "name": "@bbforge/ui",
-  "version": "0.0.0",
+  "name": "@bbforge/design-system",
+  "version": "0.0.1",
   "private": true,
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
