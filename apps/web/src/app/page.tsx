@@ -18,14 +18,14 @@ export default async function Page() {
       acc[curr.name] = [];
     }
 
-    acc[curr.name].push(curr.attachments.map((x) => x.attachmentName));
+    acc[curr.name].push(...curr.attachments.map((x) => x.attachmentName));
 
     return acc;
   }, {});
 
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-8">
         <header className="text-slate-200 flex justify-between items-center h-32">
           <p className="text-2xl font-semibold">Battlebit Forge</p>
           <div className="space-x-4">
@@ -35,15 +35,25 @@ export default async function Page() {
         </header>
         <MyLoadouts />
         <section className="grid grid-cols-6 gap-x-4 gap-y-10">
-          {weapons.map((x) => (
-            <div className="text-white">
-              <img src={x.imageUrl} className="w-52" alt={x.name} />
-              <h2 className="text-1xl font-bold mt-4">{x.name}</h2>
-              <p className="text-slate-400 break-words">
-                {groupedAttachments[x.name]?.join(", ")}
-              </p>
-            </div>
-          ))}
+          {[...weapons]
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((x) => (
+              <div className="text-white bg-[#101319] p-4">
+                <img
+                  src={x.imageUrl}
+                  className="w-52 px-6 py-12"
+                  alt={x.name}
+                />
+                <h2 className="text-1xl font-bold mt-4 mb-2">{x.name}</h2>
+                <select className="bg-[#101319] p-4 w-full border-2 border-gray-800">
+                  {groupedAttachments[x.name]?.map((attachment) => (
+                    <option key={attachment} value={attachment}>
+                      {attachment}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ))}
         </section>
       </div>
     </>

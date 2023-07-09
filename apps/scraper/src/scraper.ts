@@ -8,6 +8,7 @@ type ParsedWeapon = {
 };
 
 type ParsedAttachment = {
+  category?: string;
   name: string;
 };
 
@@ -19,6 +20,9 @@ type ParsedItem = {
 type ParseResult = ParsedItem[];
 
 // TODO: Attachment Category!
+// TODO: What about sub categories?
+// TODO: Add weapon type
+// TODO: ak-74 is broken and so is AK5C --> happens because of normalize image *mostly*.
 export class Scraper {
   public constructor(private readonly _puppeteer: typeof puppeteer) {}
 
@@ -34,9 +38,9 @@ export class Scraper {
       // The last two tables are different and not related at all
       tables.splice(-2);
 
-        function normalizeImage(url: string): string {
-          return url.substring(0, url.indexOf(".png") + 4);
-        }
+      function normalizeImage(url: string): string {
+        return url.substring(0, url.indexOf(".png") + 4);
+      }
 
       const weapons: ParsedWeapon[] = [];
       for (const table of tables) {
@@ -47,7 +51,6 @@ export class Scraper {
             return item.innerHTML;
           });
         });
-
 
         const parser = new DOMParser();
         const parsedResult = items.map((item) => {
@@ -112,16 +115,37 @@ export class Scraper {
         );
         const spanContents = Array.from(
           document.querySelectorAll(".wds-tab__content span")
-        );
+        ).map((x) => {
+          const lastChild = x.lastElementChild;
+
+          if (lastChild && lastChild.innerHTML !== "") {
+            return lastChild;
+          }
+
+          return x;
+        });
+
         const liContents = Array.from(
           document.querySelectorAll(".wds-tab__content li")
-        );
+        ).map((x) => {
+          const lastChild = x.lastElementChild;
+
+          if (lastChild && lastChild.innerHTML !== "") {
+            return lastChild;
+          }
+
+          return x;
+        });
 
         // TODO: make sure that span and li contents do not have any children, we are still getting html values.
-        // return contents
-        //   .concat(spanContents)
-        //   .concat(liContents)
-        //   .map((content) => content.innerHTML);
+        return contents
+          .concat(spanContents)
+          .concat(liContents)
+          .map((content) => content.innerHTML)
+          .map((content) => content.replace(/<p[^>]*>.*?<\/p>/gi, ""))
+          .map((content) => content.replace(/<a[^>]*>.*?<\/a>/gi, ""))
+          .filter((x) => !["[", "]"].includes(x))
+          .filter((x) => x?.length !== 0);
 
         // For now we only grab attachments that have a link. They appear valid
         return contents.map((x) => x.innerHTML);
