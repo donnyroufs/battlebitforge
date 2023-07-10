@@ -1,4 +1,4 @@
 # Scraper
 
-Scrapes and parses the data from the official wiki. This is triggered every now and then manually,
-and build in a way that we can throw most of it away the moment their public api exposes the data we need.
+Scrapes the official battelbit wiki for weapon and attachment data. Will be replaced soon with extracted data
+from the game itself or hopefully, an official api. 
