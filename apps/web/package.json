@@ -12,6 +12,7 @@
     "@bbforge/auth": "*",
     "@bbforge/database": "*",
     "@bbforge/design-system": "*",
+    "@bbforge/scraper": "*",
     "next": "^13.4.1",
     "next-auth": "^4.22.1",
     "react": "^18.2.0",

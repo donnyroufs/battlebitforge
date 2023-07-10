@@ -5,7 +5,7 @@ import { PrismaClient } from "@prisma/client";
 // TODO: Versioning, what game version is this data from?
 // TODO: Save differences between datasets incase something goes wrong
 // TODO: Perhaps add an ID incase things get renamed.
-export async function bootstrap() {
+export async function run() {
   const prisma = new PrismaClient();
   const scraper = new Scraper(puppeteer);
 
@@ -46,5 +46,3 @@ export async function bootstrap() {
     },
   });
 }
-
-bootstrap();
