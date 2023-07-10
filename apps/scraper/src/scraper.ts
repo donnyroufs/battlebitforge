@@ -19,8 +19,8 @@ type ParsedItem = {
 
 type ParseResult = ParsedItem[];
 
-// TODO: Attachment Category!
-// TODO: What about sub categories?
+// TODO: Attachment slot
+// TODO: Attachment category e.g. short range, medium range, suppresors
 // TODO: Add weapon type
 // TODO: ak-74 is broken and so is AK5C --> happens because of normalize image *mostly*.
 export class Scraper {
@@ -113,17 +113,20 @@ export class Scraper {
         const contents = Array.from(
           document.querySelectorAll(".wds-tab__content a")
         );
+
         const spanContents = Array.from(
           document.querySelectorAll(".wds-tab__content span")
-        ).map((x) => {
-          const lastChild = x.lastElementChild;
+        )
+          .filter((x) => !x.classList.contains("mw-headline"))
+          .map((x) => {
+            const lastChild = x.lastElementChild;
 
-          if (lastChild && lastChild.innerHTML !== "") {
-            return lastChild;
-          }
+            if (lastChild && lastChild.innerHTML !== "") {
+              return lastChild;
+            }
 
-          return x;
-        });
+            return x;
+          });
 
         const liContents = Array.from(
           document.querySelectorAll(".wds-tab__content li")
@@ -137,7 +140,6 @@ export class Scraper {
           return x;
         });
 
-        // TODO: make sure that span and li contents do not have any children, we are still getting html values.
         return contents
           .concat(spanContents)
           .concat(liContents)
@@ -146,9 +148,6 @@ export class Scraper {
           .map((content) => content.replace(/<a[^>]*>.*?<\/a>/gi, ""))
           .filter((x) => !["[", "]"].includes(x))
           .filter((x) => x?.length !== 0);
-
-        // For now we only grab attachments that have a link. They appear valid
-        return contents.map((x) => x.innerHTML);
       });
 
       final.push({

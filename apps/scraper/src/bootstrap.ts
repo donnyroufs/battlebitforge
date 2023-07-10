@@ -1,5 +1,4 @@
 import puppeteer from "puppeteer";
-import fs from "fs";
 import { Scraper } from "./scraper";
 import { PrismaClient } from "@prisma/client";
 
@@ -11,7 +10,6 @@ export async function bootstrap() {
   const scraper = new Scraper(puppeteer);
 
   const result = await scraper.scrape();
-  // fs.writeFileSync("./result.json", JSON.stringify(result, null, 2));
 
   await prisma.attachment.createMany({
     data: result.flatMap((x) => x.attachments),
