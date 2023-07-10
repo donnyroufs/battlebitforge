@@ -1,9 +1,5 @@
-import { ButtonHTMLAttributes, FC } from "react";
+import { ButtonHTMLAttributes } from "react";
 import { VariantProps, cva } from "class-variance-authority";
-
-export type ButtonProps = FC<{
-  onClick(): void;
-}>;
 
 const buttonStyles = cva("px-4 py-3 font-bold transition-all rounded-lg", {
   variants: {
