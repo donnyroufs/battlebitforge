@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["views"]
 }
 
 datasource db {
@@ -41,4 +42,79 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Attachments {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  slotAttachments SlotAttachments[]
+}
+
+
+// A weapon has a slot, a slot can attach an attachment.
+model Slots {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  slotAttachments SlotAttachments[]
+}
+
+
+// Each attachment belongs to a slot, some attachments might actually belong to multiple
+model SlotAttachments {
+  id Int @id @default(autoincrement())
+
+  slots         Slots       @relation(fields: [slotsId], references: [id])
+  slotsId       Int
+  attachments   Attachments @relation(fields: [attachmentsId], references: [id])
+  attachmentsId Int
+
+  weaponSlotAttachments WeaponSlotAttachments[]
+
+  @@unique([slotsId, attachmentsId])
+}
+
+model Weapons {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  weaponSlotAttachments WeaponSlotAttachments[]
+  loadouts               Loadouts[]
+}
+
+// A specific weapon does not always have the same attachments for a generic slot.
+// e.g. optic might have red dot and kobra for an ak47
+// but for a m4a1 it might only be a red dot.
+model WeaponSlotAttachments {
+  id Int @id @default(autoincrement())
+
+  weapon            Weapons         @relation(fields: [weaponsId], references: [id])
+  weaponsId         Int
+  slotAttachment    SlotAttachments @relation(fields: [slotAttachmentsId], references: [id])
+  slotAttachmentsId Int
+
+  loadoutAttachments LoadoutItems[]
+}
+
+
+model Loadouts {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  weapon    Weapons @relation(fields: [weaponsId], references: [id])
+  weaponsId Int
+
+  items LoadoutItems[]
+}
+
+
+// The selected attachments for a loadout.
+model LoadoutItems {
+  id Int @id @default(autoincrement())
+
+  weaponSlotAttachments   WeaponSlotAttachments @relation(fields: [weaponSlotAttachmentsId], references: [id])
+  weaponSlotAttachmentsId Int
+  loadout                 Loadouts               @relation(fields: [loadoutId], references: [id])
+  loadoutId               Int
 }
