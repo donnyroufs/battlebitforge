@@ -8,14 +8,14 @@ export function Logout() {
 
   if (session.status !== "authenticated") {
     return (
-      <Button onClick={() => signIn("discord")} variant="ghost">
+      <Button onClick={() => signIn("discord")} variant="secondary">
         Login
       </Button>
     );
   }
 
   return (
-    <Button onClick={() => signOut()} variant="ghost">
+    <Button onClick={() => signOut()} variant="secondary">
       Logout
     </Button>
   );
