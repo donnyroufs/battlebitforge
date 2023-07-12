@@ -3,6 +3,9 @@ import { prisma } from "@bbforge/database";
 export type LoadoutsView = {
   id: number;
   name: string;
+  weapon: {
+    name: string;
+  };
   slug: string;
   userId: string;
   items: { attachmentName: string | null; slotName: string }[];
@@ -20,6 +23,11 @@ export async function getLoadoutBySlug(slug: string): Promise<LoadoutsView> {
       slug,
     },
     include: {
+      weapon: {
+        select: {
+          name: true,
+        },
+      },
       items: {
         select: {
           weaponSlotAttachments: {
@@ -67,6 +75,9 @@ async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
       slotName: slot,
       attachmentName: null,
     })),
+    weapon: {
+      name: loadout.weapon.name,
+    },
   };
 
   const selected = loadout.items.map((item) => ({

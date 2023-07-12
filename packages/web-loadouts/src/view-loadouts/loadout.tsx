@@ -16,7 +16,7 @@ export function Loadout(props: GetLoadoutsResult[number]) {
         height={320}
         width={320}
         alt="weapon"
-        className="opacity-70 my-8 mx-auto"
+        className="opacity-80 my-8 mx-auto"
       />
 
       <div className="relative">
