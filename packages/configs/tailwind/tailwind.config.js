@@ -6,7 +6,7 @@ module.exports = {
     "./**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
     "../../packages/design-system/**/*.{js,ts,jsx,tsx}",
-    "../../packages/loadouts/**/*.{js,ts,jsx,tsx}",
+    "../../packages/web-loadouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},

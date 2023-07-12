@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "migrate:prod": "turbo run db:migrate:prod",
+    "db:seed": "turbo run db:seed",
     "build": "turbo run build",
     "dev": "dotenv -- turbo run dev",
     "start": "turbo start",
@@ -11,6 +12,9 @@
     "changeset:status": "changeset status --verbose",
     "changeset:version": "changeset version",
     "changeset:tag": "changeset tag"
+  },
+  "dependencies": {
+    "@prisma/client": "4.16.2"
   },
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",

@@ -6,12 +6,11 @@
   "scripts": {
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
-    "db:migrate:prod": "prisma migrate deploy"
-  },
-  "dependencies": {
-    "@prisma/client": "^4.16.2"
+    "db:migrate:prod": "prisma migrate deploy",
+    "db:seed": "ts-node ./prisma/seed.ts"
   },
   "devDependencies": {
-    "prisma": "^4.16.2"
+    "prisma": "^4.16.2",
+    "ts-node": "^10.9.1"
   }
 }
