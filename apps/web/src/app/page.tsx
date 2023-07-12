@@ -1,3 +1,5 @@
+import { prisma } from "@bbforge/database";
+
 export default async function Page() {
   return (
     <>

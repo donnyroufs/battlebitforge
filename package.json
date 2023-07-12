@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "migrate:prod": "turbo run db:migrate:prod",
+    "db:seed": "turbo run db:seed",
     "build": "turbo run build",
     "dev": "dotenv -- turbo run dev",
     "start": "turbo start",

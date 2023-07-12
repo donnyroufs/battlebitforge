@@ -1,5 +1,5 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["views"]
 }
 
@@ -28,12 +28,13 @@ model Account {
 }
 
 model User {
-  id            String    @id @default(cuid())
+  id            String     @id @default(cuid())
   name          String?
-  email         String?   @unique
+  email         String?    @unique
   emailVerified DateTime?
   image         String?
   accounts      Account[]
+  loadouts      Loadouts[]
 }
 
 model VerificationToken {
@@ -51,7 +52,6 @@ model Attachments {
   slotAttachments SlotAttachments[]
 }
 
-
 // A weapon has a slot, a slot can attach an attachment.
 model Slots {
   id   Int    @id @default(autoincrement())
@@ -59,7 +59,6 @@ model Slots {
 
   slotAttachments SlotAttachments[]
 }
-
 
 // Each attachment belongs to a slot, some attachments might actually belong to multiple
 model SlotAttachments {
@@ -80,7 +79,7 @@ model Weapons {
   name String @unique
 
   weaponSlotAttachments WeaponSlotAttachments[]
-  loadouts               Loadouts[]
+  loadouts              Loadouts[]
 }
 
 // A specific weapon does not always have the same attachments for a generic slot.
@@ -97,17 +96,19 @@ model WeaponSlotAttachments {
   loadoutAttachments LoadoutItems[]
 }
 
-
 model Loadouts {
   id   Int    @id @default(autoincrement())
-  name String @unique
+  name String
+  slug String
 
-  weapon    Weapons @relation(fields: [weaponsId], references: [id])
+  weapon    Weapons        @relation(fields: [weaponsId], references: [id])
   weaponsId Int
+  items     LoadoutItems[]
+  user      User           @relation(fields: [userId], references: [id])
+  userId    String
 
-  items LoadoutItems[]
+  @@unique([name, userId])
 }
-
 
 // The selected attachments for a loadout.
 model LoadoutItems {
@@ -115,6 +116,19 @@ model LoadoutItems {
 
   weaponSlotAttachments   WeaponSlotAttachments @relation(fields: [weaponSlotAttachmentsId], references: [id])
   weaponSlotAttachmentsId Int
-  loadout                 Loadouts               @relation(fields: [loadoutId], references: [id])
+  loadout                 Loadouts              @relation(fields: [loadoutId], references: [id])
   loadoutId               Int
+}
+
+view WeaponsView {
+  id          Int    @unique
+  name        String @unique
+  attachments Json
+}
+
+view LoadoutsView {
+  id          Int    @unique
+  name        String @unique
+  weaponName  String
+  attachments Json
 }

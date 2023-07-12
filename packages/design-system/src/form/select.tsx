@@ -13,27 +13,29 @@ type SelectProps = {
   name: string;
   placeholder?: string;
   options: IOption[];
+  disabled?: boolean;
 };
 
-export const Select = forwardRef<HTMLInputElement, SelectProps>(
-  ({ name, placeholder, label = name, options }, ref) => {
+export const Select = forwardRef<HTMLSelectElement, SelectProps>(
+  ({ options, placeholder, ...props }, ref) => {
     const form = useFormContext();
-    const state = form.getFieldState(name, form.formState);
+    const state = form.getFieldState(props.name, form.formState);
 
     return (
-      <label htmlFor={name} className="w-full capitalize">
-        {label}
+      <label htmlFor={props.name} className="w-full capitalize">
+        {props.label ?? props.name}
         <select
+          disabled={props.disabled}
+          defaultValue="default"
           className="py-2 px-4 bg-gray-700 mt-2 w-full"
-          name={name}
-          // @ts-ignore
           ref={ref}
+          {...props}
         >
-          <option selected disabled>
+          <option value="default" disabled>
             {placeholder}
           </option>
           {options.map((option) => (
-            <option value={option.value} key={option.id}>
+            <option value={option.value} key={option.value}>
               {option.name}
             </option>
           ))}

@@ -21,6 +21,9 @@
     },
     "db:migrate:prod": {
       "cache": false
+    },
+    "db:seed": {
+      "cache": false
     }
   }
 }
