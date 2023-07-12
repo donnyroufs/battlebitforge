@@ -13,6 +13,9 @@
     "changeset:version": "changeset version",
     "changeset:tag": "changeset tag"
   },
+  "dependencies": {
+    "@prisma/client": "4.16.2"
+  },
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.2",

@@ -1,20 +1,45 @@
 import { Logout } from "@bbforge/auth";
-import { Button } from "@bbforge/design-system";
+import NextLink from "next/link";
 import { version } from "../../package.json";
+import { Link } from "@bbforge/design-system";
 
 export function Header() {
   return (
-    <header className="text-slate-300 flex justify-between items-center h-32">
-      <p className="text-2xl font-semibold flex items-center">
-        Battlebit Forge
-        <span className="bg-slate-700 text-slate-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-2 mt-2 pointer-events-none">
-          v{version}
-        </span>
-      </p>
-      <div className="space-x-4">
-        <Button variant="primary">Forge Loadout</Button>
+    <>
+      <header className="text-[#DAE2EB] justify-between items-center h-32 hidden md:flex">
+        <div>
+          <span className="uppercase mb-4 font-extrabold">v{version}</span>
+          <NextLink href="/">
+            <p className="text-3xl flex items-center uppercase font-extrabold">
+              Battlebit Forge
+            </p>
+          </NextLink>
+        </div>
+        <div className="flex items-center">
+          <nav className="mr-8">
+            <Link variant="ghost" href="/my-loadouts">
+              My Loadouts
+            </Link>
+          </nav>
+          <div className="space-x-4">
+            <Link href="/forge" variant="primary">
+              Forge Loadout
+            </Link>
+            <Logout />
+          </div>
+        </div>
+      </header>
+      <header className="text-[#DAE2EB] justify-between items-center h-32 flex md:hidden">
+        <div>
+          <span className="uppercase mb-4 font-extrabold">v{version}</span>
+          <NextLink href="/">
+            <p className="text-3xl flex items-center uppercase font-extrabold">
+              Battlebit Forge
+            </p>
+          </NextLink>
+        </div>
         <Logout />
-      </div>
-    </header>
+      </header>
+    </>
   );
 }

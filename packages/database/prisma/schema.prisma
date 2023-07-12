@@ -125,10 +125,3 @@ view WeaponsView {
   name        String @unique
   attachments Json
 }
-
-view LoadoutsView {
-  id          Int    @unique
-  name        String @unique
-  weaponName  String
-  attachments Json
-}
