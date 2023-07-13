@@ -22,6 +22,26 @@ export async function ViewLoadout(props: PageProps) {
     },
   });
 
+  async function onDelete(): Promise<void> {
+    "use server";
+
+    const session = await getServerSession();
+    const user = await prisma.user.findFirst({
+      where: {
+        email: session?.user.email,
+      },
+    });
+
+    await prisma.loadouts.delete({
+      where: {
+        name_userId: {
+          name: loadout.name,
+          userId: user.id,
+        },
+      },
+    });
+  }
+
   const totalLikes = loadout.votes.reduce((acc, curr) => {
     if (curr.type === "Like") {
       acc += 1;
@@ -75,10 +95,10 @@ export async function ViewLoadout(props: PageProps) {
                 />
               ))}
           </div>
-          {isOwner && false && (
+          {isOwner && (
             <footer className="mt-8 flex">
               <div className="ml-auto">
-                <DeleteLoadout />
+                <DeleteLoadout loadoutName={loadout.name} onDelete={onDelete} />
               </div>
             </footer>
           )}
