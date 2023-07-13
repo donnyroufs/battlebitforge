@@ -8,7 +8,7 @@ export async function MyLoadouts() {
   const session = await getServerSession();
   const user = await prisma.user.findFirst({
     where: {
-      name: session.user?.name,
+      name: session?.user?.name,
     },
     select: {
       id: true,
