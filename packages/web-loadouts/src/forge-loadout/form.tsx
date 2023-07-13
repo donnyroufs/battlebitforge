@@ -23,6 +23,7 @@ type ForgeFormProps = {
 export function ForgeForm({ weapons, slots }: ForgeFormProps) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false)
   const form = useZodForm({
     schema,
   });
@@ -33,6 +34,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
     weapons.find((weapon) => weapon.id === Number(selectedWeaponId));
 
   async function onSubmit(data: any) {
+    setLoading(true)
     setError(null);
     const dto: ForgeLoadoutDto = {
       name: data.name!,
@@ -44,6 +46,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
 
     const result = await ApiClient.forgeLoadoutQuery(dto);
 
+    setLoading(false)
     switch (result.type) {
       case "failed":
         setError(result.reason);
@@ -103,7 +106,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
           ))}
         </div>
         <div className="w-full pt-4">
-          <Button variant="primary" w="full">
+          <Button variant="primary" w="full" disabled={loading}>
             Forge
           </Button>
           {error && (
