@@ -99,8 +99,8 @@ model WeaponSlotAttachments {
 
 model Loadouts {
   id   Int    @id @default(autoincrement())
-  name String
-  slug String
+  name String @unique
+  slug String @unique
 
   weapon    Weapons        @relation(fields: [weaponsId], references: [id])
   weaponsId Int

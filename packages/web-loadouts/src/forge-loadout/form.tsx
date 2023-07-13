@@ -1,6 +1,5 @@
 "use client";
 
-import { WeaponsView } from "@bbforge/database";
 import {
   Button,
   Form,
@@ -12,6 +11,8 @@ import {
 import { Slots } from "@prisma/client";
 import { ForgeLoadoutDto, schema } from "./schema";
 import { ApiClient } from "./api-client";
+import { WeaponsView } from "../view-loadout/infra/get-loadout-by-slug";
+import { useRouter } from "next/navigation";
 
 type ForgeFormProps = {
   weapons: WeaponsView[];
@@ -19,6 +20,7 @@ type ForgeFormProps = {
 };
 
 export function ForgeForm({ weapons, slots }: ForgeFormProps) {
+  const router = useRouter();
   const form = useZodForm({
     schema,
   });
@@ -44,7 +46,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
         console.error(result.reason);
         break;
       case "success":
-        // TODO: redirect
+        router.push("/loadouts/" + result.slug);
         break;
     }
   }

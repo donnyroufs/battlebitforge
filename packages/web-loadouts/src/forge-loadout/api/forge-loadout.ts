@@ -36,5 +36,8 @@ export async function forgeLoadout(request: Request) {
     })),
   });
 
-  return NextResponse.json({ id: loadout.id }, { status: 201 });
+  return NextResponse.json(
+    { id: loadout.id, slug: loadout.slug },
+    { status: 201 }
+  );
 }
