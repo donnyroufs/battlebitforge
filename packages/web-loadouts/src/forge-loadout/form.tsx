@@ -92,7 +92,9 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
           {...form.register("weapon")}
         />
         <div className="flex flex-col gap-4">
-          <h3 className="text-2xl mt-4 mb-2">Select Attachments</h3>
+          <h3 className="text-2xl mt-8 mb-2 text-[#FE9B00] font-black uppercase">
+            Select Attachments
+          </h3>
           {mergedSlots.map((slot, index) => (
             <Select
               key={slot}
