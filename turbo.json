@@ -5,7 +5,8 @@
     "start": {},
     "build": {
       "dependsOn": ["^build", "^db:generate"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**"],
+      "cache": false
     },
     "lint": {},
     "dev": {
