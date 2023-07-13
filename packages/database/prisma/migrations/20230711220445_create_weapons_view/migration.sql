@@ -8,7 +8,7 @@ SELECT
   ) AS attachments
 FROM
   "Weapons" w
-  INNER JOIN (
+LEFT JOIN (
     SELECT
       ws."weaponsId",
       sa."slotsId",
@@ -17,13 +17,13 @@ FROM
       ) AS attachments
     FROM
       "WeaponSlotAttachments" ws
-      INNER JOIN "SlotAttachments" sa ON ws."slotAttachmentsId" = sa."id"
-      INNER JOIN "Attachments" a ON sa."attachmentsId" = a."id"
+LEFT JOIN "SlotAttachments" sa ON ws."slotAttachmentsId" = sa."id"
+LEFT JOIN "Attachments" a ON sa."attachmentsId" = a."id"
     GROUP BY
       ws."weaponsId",
       sa."slotsId"
   ) sa ON w."id" = sa."weaponsId"
-  INNER JOIN "Slots" s ON sa."slotsId" = s."id"
+LEFT JOIN "Slots" s ON sa."slotsId" = s."id"
 GROUP BY
   w."id",
   w."name";

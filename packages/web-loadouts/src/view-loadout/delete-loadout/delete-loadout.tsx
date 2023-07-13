@@ -1,6 +1,7 @@
 import { Button } from "@bbforge/design-system";
 import { MdDelete } from "react-icons/md";
 
+// TODO: add confirmation
 export function DeleteLoadout() {
   return (
     <Button variant="secondary">

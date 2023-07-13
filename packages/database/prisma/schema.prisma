@@ -76,8 +76,9 @@ model SlotAttachments {
 }
 
 model Weapons {
-  id   Int    @id @default(autoincrement())
-  name String @unique
+  id       Int    @id @default(autoincrement())
+  name     String @unique
+  imageUrl String 
 
   weaponSlotAttachments WeaponSlotAttachments[]
   loadouts              Loadouts[]
@@ -99,8 +100,8 @@ model WeaponSlotAttachments {
 
 model Loadouts {
   id   Int    @id @default(autoincrement())
-  name String
-  slug String
+  name String @unique
+  slug String @unique
 
   weapon    Weapons        @relation(fields: [weaponsId], references: [id])
   weaponsId Int

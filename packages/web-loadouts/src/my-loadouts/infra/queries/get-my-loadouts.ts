@@ -14,6 +14,16 @@ export async function getMyLoadouts(userId: string) {
       userId,
     },
     include: {
+      votes: {
+        select: {
+          type: true,
+        },
+      },
+      weapon: {
+        select: {
+          imageUrl: true,
+        },
+      },
       items: {
         select: {
           weaponSlotAttachments: {
