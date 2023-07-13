@@ -57,6 +57,12 @@ async function main() {
         data: [
           { id: 1, name: "M4A1", imageUrl: "/weapons/M4A1.png" },
           { id: 2, name: "HK-419", imageUrl: "/weapons/HK419.png" },
+          { id: 3, name: "ASVAL", imageUrl: "/weapons/ASVAL.png" },
+          {
+            id: 4,
+            name: "Desert Eagle",
+            imageUrl: "/weapons/DESERT-EAGLE.png",
+          },
         ],
         skipDuplicates: true,
       }),

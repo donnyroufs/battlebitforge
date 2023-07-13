@@ -67,11 +67,17 @@ export async function getLoadoutBySlug(slug: string) {
 }
 
 async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
-  const weapon = (await prisma.weaponsView.findFirst({
+  const res = (await prisma.weaponsView.findFirst({
     where: {
       id: loadout.weaponsId,
     },
   })) as WeaponsView;
+
+
+  const weapon = {
+    ...res,
+    attachments: res.attachments.filter((x) => x.slot !== null),
+  };
 
   const weaponSlots = weapon.attachments.map((x) => x.slot);
   const result: LoadoutsView = {
