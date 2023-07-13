@@ -76,8 +76,9 @@ model SlotAttachments {
 }
 
 model Weapons {
-  id   Int    @id @default(autoincrement())
-  name String @unique
+  id       Int    @id @default(autoincrement())
+  name     String @unique
+  imageUrl String 
 
   weaponSlotAttachments WeaponSlotAttachments[]
   loadouts              Loadouts[]

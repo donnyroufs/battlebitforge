@@ -1,10 +1,8 @@
 import { getServerSession } from "next-auth";
 import { Vote } from "./vote-loadout/vote";
-import { MdDelete } from "react-icons/md";
 import { getLoadoutBySlug } from "./infra/get-loadout-by-slug";
 import Image from "next/image";
 import { prisma } from "@bbforge/database";
-import { Button } from "@bbforge/design-system";
 import { DeleteLoadout } from "./delete-loadout/delete-loadout";
 
 type ViewLoadoutProps = {
@@ -55,7 +53,7 @@ export async function ViewLoadout(props: ViewLoadoutProps) {
         <div>
           <div className="bg-[#10111A] p-12 w-full flex items-center justify-center border-gray-800 border-[1px]">
             <Image
-              src="/ACR.png"
+              src={loadout.weapon.imageUrl}
               height={240}
               width={240}
               alt="weapon"

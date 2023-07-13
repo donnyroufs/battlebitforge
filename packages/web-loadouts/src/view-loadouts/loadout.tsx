@@ -26,7 +26,7 @@ export function Loadout(props: GetLoadoutsResult[number]) {
           {props.name}
         </h2>
         <Image
-          src="/ACR.png"
+          src={props.weapon.imageUrl}
           height={320}
           width={320}
           alt="weapon"

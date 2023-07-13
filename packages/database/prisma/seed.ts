@@ -55,8 +55,8 @@ async function main() {
       // Create Weapons
       prisma.weapons.createMany({
         data: [
-          { id: 1, name: "M4A1" },
-          { id: 2, name: "HK-419" },
+          { id: 1, name: "M4A1", imageUrl: "/weapons/M4A1.png" },
+          { id: 2, name: "HK-419", imageUrl: "/weapons/HK419.png" },
         ],
         skipDuplicates: true,
       }),

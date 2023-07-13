@@ -6,6 +6,7 @@ export type LoadoutsView = {
   name: string;
   weapon: {
     name: string;
+    imageUrl: string
   };
   slug: string;
   userId: string;
@@ -34,6 +35,7 @@ export async function getLoadoutBySlug(slug: string) {
       weapon: {
         select: {
           name: true,
+          imageUrl: true,
         },
       },
       items: {
@@ -83,8 +85,9 @@ async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
     })),
     weapon: {
       name: loadout.weapon.name,
+      imageUrl: loadout.weapon.imageUrl,
     },
-    votes: loadout.votes
+    votes: loadout.votes,
   };
 
   const selected = loadout.items.map((item) => ({

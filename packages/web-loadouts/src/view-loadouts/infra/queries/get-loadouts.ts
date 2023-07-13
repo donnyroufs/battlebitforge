@@ -5,6 +5,9 @@ export type LoadoutsView = {
   id: number;
   name: string;
   slug: string;
+  weapon: {
+    imageUrl: string;
+  };
   userId: string;
   items: { attachmentName: string | null; slotName: string }[];
 };
@@ -21,6 +24,11 @@ export async function getLoadouts(
       },
     },
     include: {
+      weapon: {
+        select: {
+          imageUrl: true,
+        },
+      },
       votes: {
         select: {
           type: true,
