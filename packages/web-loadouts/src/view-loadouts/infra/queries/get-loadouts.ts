@@ -14,7 +14,6 @@ export async function getLoadouts(
   limit: number = 20
 ) {
   const filter = filterBy === "all" ? undefined : filterBy;
-  console.time("loadouts");
   return prisma.loadouts.findMany({
     where: {
       weapon: {

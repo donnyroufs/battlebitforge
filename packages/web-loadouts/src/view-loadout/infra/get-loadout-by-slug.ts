@@ -1,4 +1,5 @@
 import { prisma } from "@bbforge/database";
+import { LoadoutVote, Prisma } from "@prisma/client";
 
 export type LoadoutsView = {
   id: number;
@@ -9,6 +10,7 @@ export type LoadoutsView = {
   slug: string;
   userId: string;
   items: { attachmentName: string | null; slotName: string }[];
+  votes: { userId: string, type: LoadoutVote }[]
 };
 
 export type WeaponsView = {
@@ -17,12 +19,18 @@ export type WeaponsView = {
   attachments: { slot: string; attachments: { id: number; name: string }[] }[];
 };
 
-export async function getLoadoutBySlug(slug: string): Promise<LoadoutsView> {
+export async function getLoadoutBySlug(slug: string) {
   const loadout = await prisma.loadouts.findFirst({
     where: {
       slug,
     },
     include: {
+      votes: {
+        select: {
+          userId: true,
+          type: true,
+        },
+      },
       weapon: {
         select: {
           name: true,
@@ -53,8 +61,6 @@ export async function getLoadoutBySlug(slug: string): Promise<LoadoutsView> {
     },
   });
 
-  console.timeEnd("loadout");
-
   return mapLoadoutAsync(loadout);
 }
 
@@ -78,6 +84,7 @@ async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
     weapon: {
       name: loadout.weapon.name,
     },
+    votes: loadout.votes
   };
 
   const selected = loadout.items.map((item) => ({
@@ -94,3 +101,7 @@ async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
 
   return result;
 }
+
+export type GetLoadoutBySlugResult = Prisma.PromiseReturnType<
+  typeof getLoadoutBySlug
+>;

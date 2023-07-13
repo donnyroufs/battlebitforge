@@ -1,5 +1,11 @@
-import { getLoadoutBySlug } from "./infra/get-loadout-by-slug";
+import { getServerSession } from "next-auth";
+import { Vote } from "../vote-loadout/vote";
+import {
+  GetLoadoutBySlugResult,
+  getLoadoutBySlug,
+} from "./infra/get-loadout-by-slug";
 import Image from "next/image";
+import { prisma } from "@bbforge/database";
 
 type ViewLoadoutProps = {
   slug: string;
@@ -7,21 +13,45 @@ type ViewLoadoutProps = {
 
 export async function ViewLoadout(props: ViewLoadoutProps) {
   const loadout = await getLoadoutBySlug(props.slug);
+  const session = await getServerSession();
+  const user = await prisma.user.findFirst({
+    where: {
+      email: session.user.email,
+    },
+  });
 
-  console.log(loadout);
+  const totalLikes = loadout.votes.reduce((acc, curr) => {
+    if (curr.type === "Like") {
+      acc += 1;
+    }
+
+    return acc;
+  }, 0);
+
+  const totalDislikes = loadout.votes.length - totalLikes;
+  const myVote = loadout.votes.find((vote) => vote.userId === user.id);
+
   return (
     <div className="flex justify-center">
-      <div className="w-1/2">
-        <div className="flex flex-col mt-12">
-          <span className="font-bold bg-[#0A8AC5] w-fit py-1 px-3 text-white text-sm mb-1">
-            {loadout.weapon.name}
-          </span>
-          <h2 className="text-3xl mb-8 text-[#FE9B00] uppercase font-extrabold">
-            {loadout.name}
-          </h2>
+      <div className="w-full lg:w-4/6">
+        <div className="flex justify-between items-center ">
+          <div className="flex flex-col mt-12">
+            <span className="font-bold bg-[#0A8AC5] w-fit py-1 px-3 text-white text-sm mb-1">
+              {loadout.weapon.name}
+            </span>
+            <h2 className="text-3xl mb-8 text-[#FE9B00] uppercase font-extrabold">
+              {loadout.name}
+            </h2>
+          </div>
+          <Vote
+            slug={props.slug}
+            likes={totalLikes}
+            dislikes={totalDislikes}
+            myVote={myVote?.type ?? null}
+          />
         </div>
         <div>
-          <div className="bg-[#10111A] p-12 max-w-2xl flex items-center justify-center border-gray-800 border-[1px]">
+          <div className="bg-[#10111A] p-12 w-full flex items-center justify-center border-gray-800 border-[1px]">
             <Image
               src="/ACR.png"
               height={240}

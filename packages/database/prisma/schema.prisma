@@ -28,13 +28,14 @@ model Account {
 }
 
 model User {
-  id            String     @id @default(cuid())
+  id            String         @id @default(cuid())
   name          String?
-  email         String?    @unique
+  email         String?        @unique
   emailVerified DateTime?
   image         String?
   accounts      Account[]
   loadouts      Loadouts[]
+  loadoutVotes  LoadoutVotes[]
 }
 
 model VerificationToken {
@@ -106,6 +107,7 @@ model Loadouts {
   items     LoadoutItems[]
   user      User           @relation(fields: [userId], references: [id])
   userId    String
+  votes     LoadoutVotes[]
 
   @@unique([name, userId])
 }
@@ -124,4 +126,21 @@ view WeaponsView {
   id          Int    @unique
   name        String @unique
   attachments Json
+}
+
+model LoadoutVotes {
+  id Int @id @default(autoincrement())
+
+  type       LoadoutVote
+  user       User        @relation(fields: [userId], references: [id])
+  userId     String
+  loadout    Loadouts    @relation(fields: [loadoutsId], references: [id])
+  loadoutsId Int
+
+  @@unique([userId, loadoutsId])
+}
+
+enum LoadoutVote {
+  Like
+  Dislike
 }
