@@ -1,3 +1,4 @@
+import { getWeapons } from "../forge-loadout/infra/queries/get-weapons";
 import { getFilterableWeapons } from "./infra/queries/get-filterable-weapons";
 import { getLoadouts } from "./infra/queries/get-loadouts";
 import { LoadoutFilters } from "./loadout-filters";
@@ -12,6 +13,7 @@ type PageProps = {
 export async function ViewLoadouts(props: PageProps) {
   const filterBy = props.searchParams?.filterBy ?? "all";
   const filterableWeapons = await getFilterableWeapons();
+  const weapons = await getWeapons();
   const loadouts = await getLoadouts(filterBy);
 
   return (
@@ -20,6 +22,7 @@ export async function ViewLoadouts(props: PageProps) {
         <h2 className="text-3xl mb-8 text-[#FE9B00] uppercase font-extrabold mt-8">
           Loadouts
         </h2>
+        <pre>{JSON.stringify(weapons, null, 2)}</pre>
         <LoadoutFilters
           filterableWeapons={filterableWeapons}
           filterBy={filterBy}
