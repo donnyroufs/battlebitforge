@@ -14,7 +14,7 @@ export type LoadoutsView = {
 
 export async function getLoadouts(
   filterBy: "all" | string,
-  limit: number = 20
+  limit: number = 32
 ) {
   const filter = filterBy === "all" ? undefined : filterBy;
   return prisma.loadouts.findMany({
