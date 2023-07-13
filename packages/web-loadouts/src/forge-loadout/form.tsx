@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Button,
   Form,
@@ -21,6 +22,7 @@ type ForgeFormProps = {
 
 export function ForgeForm({ weapons, slots }: ForgeFormProps) {
   const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
   const form = useZodForm({
     schema,
   });
@@ -31,6 +33,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
     weapons.find((weapon) => weapon.id === Number(selectedWeaponId));
 
   async function onSubmit(data: any) {
+    setError(null);
     const dto: ForgeLoadoutDto = {
       name: data.name!,
       selected: data.selected.map((x) =>
@@ -43,7 +46,7 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
 
     switch (result.type) {
       case "failed":
-        console.error(result.reason);
+        setError(result.reason);
         break;
       case "success":
         router.push("/loadouts/" + result.slug);
@@ -103,6 +106,11 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
           <Button variant="primary" w="full">
             Forge
           </Button>
+          {error && (
+            <p className="text-red-400 py-2 font-bold">
+              * Failed to create: {error}
+            </p>
+          )}
         </div>
       </div>
     </Form>

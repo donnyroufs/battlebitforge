@@ -18,6 +18,13 @@ export class ApiClient {
       });
       const data = await res.json();
 
+      if (res.status === 400) {
+        return {
+          type: "failed",
+          reason: "name must be unique",
+        };
+      }
+
       return {
         type: "success",
         id: data.id,
