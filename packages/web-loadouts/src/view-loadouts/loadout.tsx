@@ -14,10 +14,10 @@ export function Loadout(props: GetLoadoutsResult[number]) {
 
   const totalVotes = props.votes.length;
 
+  const percentage =
+    totalVotes > 0 ? Math.round((totalLikes / totalVotes) * 100) : 0;
   const tooltipMessage =
-    totalVotes > 0
-      ? `out of the ${totalVotes}, ${totalLikes} liked it`
-      : `be the first to vote!`;
+    totalVotes > 0 ? `${percentage}% liked this` : `be the first to vote!`;
 
   return (
     <Link href={`/loadouts/${props.slug}`}>
