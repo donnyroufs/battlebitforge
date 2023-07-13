@@ -36,7 +36,7 @@ export function Vote(props: VoteProps) {
   }
 
   return (
-    <div className="space-x-2">
+    <div className="">
       <button
         disabled={loading || props.isOwner}
         className={`bg-[#1C1E29] hover:opacity-80 p-2 w-24 border-gray-800 border-[1px] font-bold ${
