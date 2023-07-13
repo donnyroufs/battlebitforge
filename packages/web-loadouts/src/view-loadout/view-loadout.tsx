@@ -78,9 +78,9 @@ export async function ViewLoadout(props: PageProps) {
           )}
           {(!isLoggedIn || isOwner) && (
             <div className="text-gray-300 flex space-x-4 font-bold capitalize bg-[#10111A] border-[1px] border-gray-800 p-4">
-              <p className="text-gray-400">5 Upvotes</p>
+              <p className="text-gray-400">{totalLikes} Good</p>
               <span className="text-gray-700 pointer-events-none">|</span>
-              <p className="text-gray-400">2 Downvotes</p>
+              <p className="text-gray-400">{totalDislikes} Bad</p>
             </div>
           )}
         </div>
