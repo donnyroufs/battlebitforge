@@ -58,6 +58,11 @@ export async function getLoadouts(
       },
     },
     take: limit,
+    orderBy: {
+      votes: {
+        _count: "desc",
+      },
+    },
   });
 }
 
