@@ -58,7 +58,7 @@ export async function ViewLoadout(props: PageProps) {
   return (
     <div className="flex justify-center">
       <div className="w-full lg:w-4/6">
-        <div className="flex justify-between items-center ">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end">
           <div className="flex flex-col mt-12">
             <span className="font-bold bg-[#0A8AC5] w-fit py-1 px-3 text-white text-sm mb-1">
               {loadout.weapon.name}
@@ -67,6 +67,7 @@ export async function ViewLoadout(props: PageProps) {
               {loadout.name}
             </h2>
           </div>
+
           {isLoggedIn && !isOwner && (
             <Vote
               isOwner={isOwner}
