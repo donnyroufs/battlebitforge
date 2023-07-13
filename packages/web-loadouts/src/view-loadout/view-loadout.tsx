@@ -5,12 +5,16 @@ import Image from "next/image";
 import { prisma } from "@bbforge/database";
 import { DeleteLoadout } from "./delete-loadout/delete-loadout";
 
-type ViewLoadoutProps = {
-  slug: string;
+type PageProps = {
+  params: {
+    slug: string;
+  };
 };
 
-export async function ViewLoadout(props: ViewLoadoutProps) {
-  const loadout = await getLoadoutBySlug(props.slug);
+export async function ViewLoadout(props: PageProps) {
+  const slug = props.params.slug;
+
+  const loadout = await getLoadoutBySlug(slug);
   const session = await getServerSession();
   const user = await prisma.user.findFirst({
     where: {
@@ -44,7 +48,7 @@ export async function ViewLoadout(props: ViewLoadoutProps) {
           </div>
           <Vote
             isOwner={isOwner}
-            slug={props.slug}
+            slug={slug}
             likes={totalLikes}
             dislikes={totalDislikes}
             myVote={myVote?.type ?? null}
@@ -88,7 +92,6 @@ type AttachmentProps = {
   slot: string;
   attachment: string | null;
 };
-
 function Attachment(props: AttachmentProps) {
   return (
     <div className="bg-[#10111A] p-4 border-gray-800 border-[1px]">

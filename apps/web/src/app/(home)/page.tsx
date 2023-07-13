@@ -7,7 +7,4 @@ type PageProps = {
   };
 };
 
-export default async function Page(props: PageProps) {
-  const filterBy = props.searchParams?.filterBy ?? "all";
-  return <ViewLoadouts filterBy={filterBy} />;
-}
+export default ViewLoadouts;

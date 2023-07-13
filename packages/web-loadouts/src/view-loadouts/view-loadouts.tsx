@@ -1,13 +1,18 @@
 import { getFilterableWeapons } from "./infra/queries/get-filterable-weapons";
+import { getLoadouts } from "./infra/queries/get-loadouts";
 import { LoadoutFilters } from "./loadout-filters";
 import { Loadouts } from "./loadouts";
 
-type ViewLoadoutsProps = {
-  filterBy: "all" | string;
+type PageProps = {
+  searchParams: {
+    filterBy?: string;
+  };
 };
 
-export async function ViewLoadouts(props: ViewLoadoutsProps) {
+export async function ViewLoadouts(props: PageProps) {
+  const filterBy = props.searchParams?.filterBy ?? "all";
   const filterableWeapons = await getFilterableWeapons();
+  const loadouts = await getLoadouts(filterBy);
 
   return (
     <>
@@ -17,10 +22,10 @@ export async function ViewLoadouts(props: ViewLoadoutsProps) {
         </h2>
         <LoadoutFilters
           filterableWeapons={filterableWeapons}
-          filterBy={props.filterBy}
+          filterBy={filterBy}
         />
       </div>
-      <Loadouts filterBy={props.filterBy} />
+      <Loadouts filterBy={filterBy} loadouts={loadouts} />
     </>
   );
 }
