@@ -21,8 +21,8 @@ export function Loadout(props: GetLoadoutsResult[number]) {
 
   return (
     <Link href={`/loadouts/${props.slug}`}>
-      <div className="p-10 bg-[#212330]">
-        <h2 className="text-2xl font-extrabold capitalize flex">
+      <div className="p-8 bg-[#212330]">
+        <h2 className="text-[1.2rem] lg:text-[1.1rem] font-extrabold capitalize flex">
           {props.name}
         </h2>
         <Image
