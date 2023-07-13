@@ -6,4 +6,7 @@ module.exports = {
     "@bbforge/auth",
     "@bbforge/loadouts",
   ],
+  experimental: {
+    serverActions: true,
+  },
 };
