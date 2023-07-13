@@ -21,6 +21,11 @@ export async function getLoadouts(
       },
     },
     include: {
+      votes: {
+        select: {
+          type: true,
+        },
+      },
       items: {
         select: {
           weaponSlotAttachments: {
