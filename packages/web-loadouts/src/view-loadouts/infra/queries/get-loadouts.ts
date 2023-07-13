@@ -60,7 +60,7 @@ export async function getLoadouts(
     take: limit,
     orderBy: {
       votes: {
-        _count: "asc",
+        _count: "desc",
       },
     },
   });
