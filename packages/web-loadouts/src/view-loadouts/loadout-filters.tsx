@@ -19,7 +19,7 @@ export function LoadoutFilters(props: LoadoutFilterProps) {
 
   return (
     <select
-      className="py-2 px-4 bg-[#212330] mt-2 min-w-[256px] h-12 p-2"
+      className="py-2 px-4 bg-[#212330] mt-2 min-w-[128px] md:min-w-[256px] h-12 p-2"
       value={filterBy}
       onChange={(e) => onChange(e.target.value)}
     >

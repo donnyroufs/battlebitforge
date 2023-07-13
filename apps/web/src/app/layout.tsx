@@ -11,7 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <NextAuthProvider>
         <body className="text-slate-300">
-          <div className="container mx-auto mb-8 px-4">
+          <div className="container mx-auto mb-8 px-8 md:px-4">
             <Header />
             {children}
           </div>
