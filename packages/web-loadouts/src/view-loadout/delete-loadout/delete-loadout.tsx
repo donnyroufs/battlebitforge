@@ -43,7 +43,7 @@ export default function Modal(props: ModalProps) {
   return (
     <>
       <Button variant="secondary" onClick={() => props.setShow(true)}>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center text-gray-400">
           <MdDelete className="mr-2" />
           Delete
         </div>

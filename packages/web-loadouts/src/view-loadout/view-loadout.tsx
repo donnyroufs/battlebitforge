@@ -53,6 +53,7 @@ export async function ViewLoadout(props: PageProps) {
   const totalDislikes = loadout.votes.length - totalLikes;
   const myVote = loadout.votes.find((vote) => vote.userId === user.id);
   const isOwner = loadout.userId === user.id;
+  const isLoggedIn = Boolean(session?.user);
 
   return (
     <div className="flex justify-center">
@@ -66,13 +67,22 @@ export async function ViewLoadout(props: PageProps) {
               {loadout.name}
             </h2>
           </div>
-          <Vote
-            isOwner={isOwner}
-            slug={slug}
-            likes={totalLikes}
-            dislikes={totalDislikes}
-            myVote={myVote?.type ?? null}
-          />
+          {isLoggedIn && !isOwner && (
+            <Vote
+              isOwner={isOwner}
+              slug={slug}
+              likes={totalLikes}
+              dislikes={totalDislikes}
+              myVote={myVote?.type ?? null}
+            />
+          )}
+          {(!isLoggedIn || isOwner) && (
+            <div className="text-gray-300 flex space-x-4 font-bold capitalize bg-[#10111A] border-[1px] border-gray-800 p-4">
+              <p className="text-gray-400">5 Upvotes</p>
+              <span className="text-gray-700 pointer-events-none">|</span>
+              <p className="text-gray-400">2 Downvotes</p>
+            </div>
+          )}
         </div>
         <div>
           <div className="bg-[#10111A] p-12 w-full flex items-center justify-center border-gray-800 border-[1px]">
