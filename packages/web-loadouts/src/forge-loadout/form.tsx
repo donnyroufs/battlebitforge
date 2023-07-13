@@ -1,6 +1,6 @@
 "use client";
 
-import { WeaponsView } from "@bbforge/database";
+import { useState } from "react";
 import {
   Button,
   Form,
@@ -12,6 +12,8 @@ import {
 import { Slots } from "@prisma/client";
 import { ForgeLoadoutDto, schema } from "./schema";
 import { ApiClient } from "./api-client";
+import { WeaponsView } from "../view-loadout/infra/get-loadout-by-slug";
+import { useRouter } from "next/navigation";
 
 type ForgeFormProps = {
   weapons: WeaponsView[];
@@ -19,6 +21,9 @@ type ForgeFormProps = {
 };
 
 export function ForgeForm({ weapons, slots }: ForgeFormProps) {
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(false)
   const form = useZodForm({
     schema,
   });
@@ -29,6 +34,8 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
     weapons.find((weapon) => weapon.id === Number(selectedWeaponId));
 
   async function onSubmit(data: any) {
+    setLoading(true)
+    setError(null);
     const dto: ForgeLoadoutDto = {
       name: data.name!,
       selected: data.selected.map((x) =>
@@ -39,12 +46,13 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
 
     const result = await ApiClient.forgeLoadoutQuery(dto);
 
+    setLoading(false)
     switch (result.type) {
       case "failed":
-        console.error(result.reason);
+        setError(result.reason);
         break;
       case "success":
-        // TODO: redirect
+        router.push("/loadouts/" + result.slug);
         break;
     }
   }
@@ -98,9 +106,14 @@ export function ForgeForm({ weapons, slots }: ForgeFormProps) {
           ))}
         </div>
         <div className="w-full pt-4">
-          <Button variant="primary" w="full">
+          <Button variant="primary" w="full" disabled={loading}>
             Forge
           </Button>
+          {error && (
+            <p className="text-red-400 py-2 font-bold">
+              * Failed to create: {error}
+            </p>
+          )}
         </div>
       </div>
     </Form>

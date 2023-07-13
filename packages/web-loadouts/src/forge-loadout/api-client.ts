@@ -1,7 +1,7 @@
 import { ForgeLoadoutDto } from "./schema";
 
 type ForgeLoadoutResult =
-  | { type: "success"; id: number }
+  | { type: "success"; id: number, slug: string }
   | { type: "failed"; reason: string };
 
 export class ApiClient {
@@ -18,9 +18,17 @@ export class ApiClient {
       });
       const data = await res.json();
 
+      if (res.status === 400) {
+        return {
+          type: "failed",
+          reason: "name must be unique",
+        };
+      }
+
       return {
         type: "success",
         id: data.id,
+        slug: data.slug
       };
     } catch (err) {
       return {

@@ -6,6 +6,7 @@ export type LoadoutsView = {
   name: string;
   weapon: {
     name: string;
+    imageUrl: string
   };
   slug: string;
   userId: string;
@@ -34,6 +35,7 @@ export async function getLoadoutBySlug(slug: string) {
       weapon: {
         select: {
           name: true,
+          imageUrl: true,
         },
       },
       items: {
@@ -65,11 +67,17 @@ export async function getLoadoutBySlug(slug: string) {
 }
 
 async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
-  const weapon = (await prisma.weaponsView.findFirst({
+  const res = (await prisma.weaponsView.findFirst({
     where: {
       id: loadout.weaponsId,
     },
   })) as WeaponsView;
+
+
+  const weapon = {
+    ...res,
+    attachments: res.attachments.filter((x) => x.slot !== null),
+  };
 
   const weaponSlots = weapon.attachments.map((x) => x.slot);
   const result: LoadoutsView = {
@@ -83,8 +91,9 @@ async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
     })),
     weapon: {
       name: loadout.weapon.name,
+      imageUrl: loadout.weapon.imageUrl,
     },
-    votes: loadout.votes
+    votes: loadout.votes,
   };
 
   const selected = loadout.items.map((item) => ({
