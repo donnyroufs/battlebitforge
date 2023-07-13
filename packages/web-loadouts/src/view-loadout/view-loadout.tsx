@@ -1,11 +1,11 @@
 import { getServerSession } from "next-auth";
-import { Vote } from "../vote-loadout/vote";
-import {
-  GetLoadoutBySlugResult,
-  getLoadoutBySlug,
-} from "./infra/get-loadout-by-slug";
+import { Vote } from "./vote-loadout/vote";
+import { MdDelete } from "react-icons/md";
+import { getLoadoutBySlug } from "./infra/get-loadout-by-slug";
 import Image from "next/image";
 import { prisma } from "@bbforge/database";
+import { Button } from "@bbforge/design-system";
+import { DeleteLoadout } from "./delete-loadout/delete-loadout";
 
 type ViewLoadoutProps = {
   slug: string;
@@ -30,6 +30,7 @@ export async function ViewLoadout(props: ViewLoadoutProps) {
 
   const totalDislikes = loadout.votes.length - totalLikes;
   const myVote = loadout.votes.find((vote) => vote.userId === user.id);
+  const isOwner = loadout.userId === user.id;
 
   return (
     <div className="flex justify-center">
@@ -44,6 +45,7 @@ export async function ViewLoadout(props: ViewLoadoutProps) {
             </h2>
           </div>
           <Vote
+            isOwner={isOwner}
             slug={props.slug}
             likes={totalLikes}
             dislikes={totalDislikes}
@@ -71,6 +73,13 @@ export async function ViewLoadout(props: ViewLoadoutProps) {
                 />
               ))}
           </div>
+          {isOwner && false && (
+            <footer className="mt-8 flex">
+              <div className="ml-auto">
+                <DeleteLoadout />
+              </div>
+            </footer>
+          )}
         </div>
       </div>
     </div>
