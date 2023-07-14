@@ -25,9 +25,9 @@ export default function RootLayout({
       <meta name="author" content="Donny Roufs" />
       <NextAuthProvider>
         <body className="text-slate-300 min-h-[100vh] flex">
-          <div className="container mx-auto mb-8 px-8 md:px-4 flex flex-col">
+          <div className="container mx-auto px-8 md:px-4 flex flex-col">
             <Header />
-            {children}
+            <div className="mb-14">{children}</div>
             <Footer />
           </div>
         </body>
