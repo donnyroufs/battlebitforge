@@ -36,6 +36,9 @@ model User {
   accounts      Account[]
   loadouts      Loadouts[]
   loadoutVotes  LoadoutVotes[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model VerificationToken {
@@ -50,6 +53,8 @@ model Attachments {
   id   Int    @id @default(autoincrement())
   name String @unique
 
+  updatedAt DateTime @updatedAt
+
   slotAttachments SlotAttachments[]
 }
 
@@ -57,6 +62,8 @@ model Attachments {
 model Slots {
   id   Int    @id @default(autoincrement())
   name String @unique
+
+  updatedAt DateTime @updatedAt
 
   slotAttachments SlotAttachments[]
 }
@@ -72,6 +79,8 @@ model SlotAttachments {
 
   weaponSlotAttachments WeaponSlotAttachments[]
 
+  updatedAt DateTime @updatedAt
+
   @@unique([slotsId, attachmentsId])
 }
 
@@ -83,6 +92,8 @@ model Weapons {
 
   weaponSlotAttachments WeaponSlotAttachments[]
   loadouts              Loadouts[]
+
+  updatedAt DateTime @updatedAt
 }
 
 // A specific weapon does not always have the same attachments for a generic slot.
@@ -111,6 +122,9 @@ model Loadouts {
   userId    String
   votes     LoadoutVotes[]
 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   @@unique([name, userId])
 }
 
@@ -122,6 +136,9 @@ model LoadoutItems {
   weaponSlotAttachmentsId Int
   loadout                 Loadouts              @relation(fields: [loadoutId], references: [id], onDelete: Cascade)
   loadoutId               Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 view WeaponsView {
@@ -138,6 +155,9 @@ model LoadoutVotes {
   userId     String
   loadout    Loadouts    @relation(fields: [loadoutsId], references: [id], onDelete: Cascade)
   loadoutsId Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([userId, loadoutsId])
 }

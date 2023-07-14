@@ -39,7 +39,7 @@ async function main() {
     const createdAttachments = await prisma.attachments.findMany();
     const createdSlots = await prisma.slots.findMany();
 
-    const slotAttachmentsData: Omit<SlotAttachments, "id">[] = [];
+    const slotAttachmentsData: Omit<SlotAttachments, "id" | "updatedAt">[] = [];
     for (const weapon of weapons) {
       for (const wa of weapon.attachments) {
         const slotId = createdSlots.find((x) => x.name === wa.slot)?.id;
