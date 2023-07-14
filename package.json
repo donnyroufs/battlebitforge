@@ -1,5 +1,6 @@
 {
   "name": "bbforge",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "migrate:prod": "turbo run db:migrate:prod",
