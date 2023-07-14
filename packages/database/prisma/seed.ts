@@ -3,7 +3,7 @@ import {
   SlotAttachments,
   WeaponSlotAttachments,
 } from "@prisma/client";
-const seed = require("../../../apps/scraper/data/1689326921868/seed.json") as {
+const seed = require("../../../apps/scraper/data/1689340190635/seed.json") as {
   weapons: {
     name: string;
     type: string;
@@ -79,7 +79,8 @@ async function main() {
         category: weapon.type,
         imageUrl: `/weapons/${weapon.name
           .replace(" ", "")
-          .replace("-", "")}.png`,
+          .replace("-", "")
+          .toUpperCase()}.png`,
       })),
       skipDuplicates: true,
     });
