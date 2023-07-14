@@ -1,9 +1,9 @@
-import { getServerSession } from "next-auth";
 import { Vote } from "./vote-loadout/vote";
 import { getLoadoutBySlug } from "./infra/get-loadout-by-slug";
 import Image from "next/image";
 import { prisma } from "@bbforge/database";
 import { DeleteLoadout } from "./delete-loadout/delete-loadout";
+import { getSession } from "@bbforge/auth";
 
 type PageProps = {
   params: {
@@ -15,28 +15,18 @@ export async function ViewLoadout(props: PageProps) {
   const slug = props.params.slug;
 
   const loadout = await getLoadoutBySlug(slug);
-  const session = await getServerSession();
-  const user = await prisma.user.findFirst({
-    where: {
-      email: session?.user.email,
-    },
-  });
+  const session = await getSession();
 
   async function onDelete(): Promise<void> {
     "use server";
 
-    const session = await getServerSession();
-    const user = await prisma.user.findFirst({
-      where: {
-        email: session?.user.email,
-      },
-    });
+    const session = await getSession();
 
     await prisma.loadouts.delete({
       where: {
         name_userId: {
           name: loadout.name,
-          userId: user.id,
+          userId: session.user.id,
         },
       },
     });
@@ -51,8 +41,8 @@ export async function ViewLoadout(props: PageProps) {
   }, 0);
 
   const totalDislikes = loadout.votes.length - totalLikes;
-  const myVote = loadout.votes.find((vote) => vote.userId === user.id);
-  const isOwner = loadout.userId === user.id;
+  const myVote = loadout.votes.find((vote) => vote.userId === session.user?.id);
+  const isOwner = Boolean(session?.user) && loadout.userId === session.user?.id;
   const isLoggedIn = Boolean(session?.user);
 
   return (

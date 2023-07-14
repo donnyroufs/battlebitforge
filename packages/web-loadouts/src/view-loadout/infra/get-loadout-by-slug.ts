@@ -21,7 +21,7 @@ export type WeaponsView = {
 };
 
 export async function getLoadoutBySlug(slug: string) {
-  const loadout = await prisma.loadouts.findFirst({
+  const loadout = await prisma.loadouts.findUnique({
     where: {
       slug,
     },
@@ -67,12 +67,11 @@ export async function getLoadoutBySlug(slug: string) {
 }
 
 async function mapLoadoutAsync(loadout: any): Promise<LoadoutsView> {
-  const res = (await prisma.weaponsView.findFirst({
+  const res = (await prisma.weaponsView.findUnique({
     where: {
       id: loadout.weaponsId,
     },
   })) as WeaponsView;
-
 
   const weapon = {
     ...res,

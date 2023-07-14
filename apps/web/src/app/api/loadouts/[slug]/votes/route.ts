@@ -1,22 +1,15 @@
+import { getSession } from "@bbforge/auth";
 import { prisma } from "@bbforge/database";
 import { LoadoutVote } from "@prisma/client";
-import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
-// TODO: add user id to session
 export async function POST(request: NextRequest, { params }: any) {
   const slug = params.slug;
   const voteType = request.nextUrl.searchParams.get("type");
   const vote = voteType === "like" ? LoadoutVote.Like : LoadoutVote.Dislike;
-  const session = await getServerSession();
+  const session = await getSession();
 
-  const user = await prisma.user.findFirst({
-    where: {
-      email: session.user.email,
-    },
-  });
-
-  const loadout = await prisma.loadouts.findFirst({
+  const loadout = await prisma.loadouts.findUnique({
     where: {
       slug,
     },
@@ -25,12 +18,12 @@ export async function POST(request: NextRequest, { params }: any) {
   await prisma.loadoutVotes.upsert({
     where: {
       userId_loadoutsId: {
-        userId: user.id,
+        userId: session.user.id,
         loadoutsId: loadout.id,
       },
     },
     create: {
-      userId: user.id,
+      userId: session.user.id,
       loadoutsId: loadout.id,
       type: vote,
     },

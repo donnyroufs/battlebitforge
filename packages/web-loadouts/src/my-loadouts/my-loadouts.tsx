@@ -1,21 +1,10 @@
-import { getServerSession } from "next-auth";
-import { prisma } from "@bbforge/database";
+import { getSession } from "@bbforge/auth";
 import { Loadout } from "../view-loadouts";
 import { getMyLoadouts } from "./infra/queries/get-my-loadouts";
 
 export async function MyLoadouts() {
-  // TODO: add user id to session
-  const session = await getServerSession();
-  const user = await prisma.user.findFirst({
-    where: {
-      name: session?.user?.name,
-    },
-    select: {
-      id: true,
-    },
-  });
-
-  const myLoadouts = await getMyLoadouts(user.id);
+  const session = await getSession();
+  const myLoadouts = await getMyLoadouts(session.user.id);
 
   return (
     <div>

@@ -1,20 +1,11 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth/next";
 import { prisma } from "@bbforge/database";
 import { ForgeLoadoutDto } from "../schema";
 import slugify from "slugify";
-import { PrismaClientValidationError } from "@prisma/client/runtime";
+import { getSession } from "@bbforge/auth";
 
 export async function forgeLoadout(request: Request) {
-  const session = await getServerSession();
-  const user = await prisma.user.findFirst({
-    where: {
-      email: session.user.email,
-    },
-    select: {
-      id: true,
-    },
-  });
+  const session = await getSession();
 
   const body = (await request.json()) as ForgeLoadoutDto;
 
@@ -22,7 +13,7 @@ export async function forgeLoadout(request: Request) {
     const loadout = await prisma.loadouts.create({
       data: {
         name: body.name,
-        userId: user.id,
+        userId: session.user.id,
         slug: slugify(body.name, {
           lower: true,
           trim: true,
