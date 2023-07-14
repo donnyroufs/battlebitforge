@@ -9,11 +9,11 @@ export function Header() {
       <header className="text-[#DAE2EB] justify-between items-center h-32 hidden md:flex">
         <div>
           <span className="uppercase mb-4 font-extrabold">v{version}</span>
-          <NextLink href="/" shallow={false}>
+          <a href="/">
             <p className="text-3xl flex items-center uppercase font-extrabold">
               Battlebit Forge
             </p>
-          </NextLink>
+          </a>
         </div>
         <div className="flex items-center">
           <nav className="mr-8">
