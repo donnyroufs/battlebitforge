@@ -37,3 +37,8 @@ A few rules:
 - Prefer duplication over DRY unless you are certain.
 
 That's it.
+
+<p align="center">
+  <img src="./docs/readme/home.png" width="100%" />
+  <img src="./docs/readme/loadout.png" width="100%" />
+</p>
