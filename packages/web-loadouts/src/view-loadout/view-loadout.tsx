@@ -5,6 +5,7 @@ import { prisma } from "@bbforge/database";
 import { DeleteLoadout } from "./delete-loadout/delete-loadout";
 import { getSession } from "@bbforge/auth";
 import { redirect } from "next/navigation";
+import { headers } from "next/dist/client/components/headers";
 
 type PageProps = {
   params: {
@@ -19,6 +20,7 @@ export async function ViewLoadout(props: PageProps) {
   const session = await getSession();
 
   if (!loadout) {
+    console.log("redirecting...");
     redirect("/");
   }
 

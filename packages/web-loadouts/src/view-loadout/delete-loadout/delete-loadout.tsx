@@ -17,6 +17,8 @@ export function DeleteLoadout(props: DeleteLoadoutProps) {
 
   async function onDelete() {
     await props.onDelete();
+    
+    router.refresh();
     router.back();
   }
 
