@@ -1,6 +1,7 @@
 import "@bbforge/design-system/styles.css";
 import { NextAuthProvider } from "@bbforge/auth";
 import { Header } from "./header";
+import { Footer } from "./footer";
 
 export default function RootLayout({
   children,
@@ -23,10 +24,11 @@ export default function RootLayout({
       />
       <meta name="author" content="Donny Roufs" />
       <NextAuthProvider>
-        <body className="text-slate-300">
-          <div className="container mx-auto mb-8 px-8 md:px-4">
+        <body className="text-slate-300 min-h-[100vh] flex">
+          <div className="container mx-auto mb-8 px-8 md:px-4 flex flex-col">
             <Header />
             {children}
+            <Footer />
           </div>
         </body>
       </NextAuthProvider>
