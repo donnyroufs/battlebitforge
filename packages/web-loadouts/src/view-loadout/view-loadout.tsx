@@ -46,8 +46,11 @@ export async function ViewLoadout(props: PageProps) {
   }, 0);
 
   const totalDislikes = loadout.votes.length - totalLikes;
-  const myVote = loadout.votes.find((vote) => vote.userId === session.user?.id);
-  const isOwner = Boolean(session?.user) && loadout.userId === session.user?.id;
+  const myVote = loadout.votes.find(
+    (vote) => vote.userId === session?.user?.id
+  );
+  const isOwner =
+    Boolean(session?.user) && loadout.userId === session?.user?.id;
   const isLoggedIn = Boolean(session?.user);
 
   return (
