@@ -1,4 +1,4 @@
-# @bbforge/loadouts
+# @bbforge/scraper
 
 ## 0.1.0
 
@@ -10,12 +10,3 @@
 
 - Updated dependencies
   - @bbforge/database@0.1.0
-  - @bbforge/design-system@0.1.0
-
-## 0.0.1
-
-### Patch Changes
-
-- initial release
-- Updated dependencies
-  - @bbforge/database@0.0.1
