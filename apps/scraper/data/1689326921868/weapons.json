@@ -1,12 +1,12 @@
 [
   {
     "name": "AK-74",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": []
   },
   {
     "name": "M4A1",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -108,7 +108,7 @@
   },
   {
     "name": "AK-15",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -145,7 +145,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -202,7 +202,7 @@
   },
   {
     "name": "SCAR-H",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -237,7 +237,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -295,7 +295,7 @@
   },
   {
     "name": "AUG A3",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -330,7 +330,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -389,7 +389,7 @@
   },
   {
     "name": "SG550",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -424,7 +424,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -482,7 +482,7 @@
   },
   {
     "name": "FAMAS",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -516,7 +516,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -572,7 +572,7 @@
   },
   {
     "name": "ACR",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -607,7 +607,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -666,7 +666,7 @@
   },
   {
     "name": "G36C",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -700,7 +700,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -758,7 +758,7 @@
   },
   {
     "name": "HK419",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -793,7 +793,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -850,7 +850,7 @@
   },
   {
     "name": "FAL",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": [
       {
         "slot": "Main sight",
@@ -885,7 +885,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -944,7 +944,7 @@
   },
   {
     "name": "AK5C",
-    "type": "Automatic Rifles",
+    "type": "Assault Rifles",
     "attachments": []
   },
   {
@@ -983,7 +983,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -1074,7 +1074,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -1214,7 +1214,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -1302,7 +1302,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",
@@ -1391,7 +1391,7 @@
         ]
       },
       {
-        "slot": "Under barrel rail",
+        "slot": "Underbarrel Rail",
         "attachments": [
           "Stubby Grip",
           "B-25 U R K",

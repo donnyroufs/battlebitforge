@@ -1,4 +1,5 @@
-import { attachmentsMap } from "./attachment-map";
+import { attachmentsMap } from "./mappers/attachment-map";
+import { slotMap } from "./mappers/slot-map";
 
 export function scrape(dom: Document) {
   const slots = Array.from(dom.querySelectorAll(".wds-tabs__tab"));
@@ -17,7 +18,9 @@ export function scrape(dom: Document) {
     const slot = slots[i];
     const content = contents[i];
 
-    const slotName = slot.querySelector(".wds-tabs__tab-label a")!.innerHTML;
+    const slotNameRaw = slot.querySelector(".wds-tabs__tab-label a")!.innerHTML;
+    const slotName =
+      slotMap[slotNameRaw as keyof typeof slotMap] ?? slotNameRaw;
 
     const attachments: Element[] = [];
 

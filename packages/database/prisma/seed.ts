@@ -3,7 +3,7 @@ import {
   SlotAttachments,
   WeaponSlotAttachments,
 } from "@prisma/client";
-const seed = require("../../../apps/scraper/data/1689295106504/seed.json") as {
+const seed = require("../../../apps/scraper/data/1689326921868/seed.json") as {
   weapons: {
     name: string;
     type: string;
