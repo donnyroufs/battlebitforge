@@ -4,6 +4,7 @@ import Image from "next/image";
 import { prisma } from "@bbforge/database";
 import { DeleteLoadout } from "./delete-loadout/delete-loadout";
 import { getSession } from "@bbforge/auth";
+import { redirect } from "next/navigation";
 
 type PageProps = {
   params: {
@@ -16,6 +17,10 @@ export async function ViewLoadout(props: PageProps) {
 
   const loadout = await getLoadoutBySlug(slug);
   const session = await getSession();
+
+  if (!loadout) {
+    redirect("/");
+  }
 
   async function onDelete(): Promise<void> {
     "use server";

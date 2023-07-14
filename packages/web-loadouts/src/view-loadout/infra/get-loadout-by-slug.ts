@@ -63,6 +63,10 @@ export async function getLoadoutBySlug(slug: string) {
     },
   });
 
+  if (!loadout) {
+    return null;
+  }
+
   return mapLoadoutAsync(loadout);
 }
 
