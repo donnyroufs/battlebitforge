@@ -1,7 +1,7 @@
-reset:
-	docker-compose down
+app:
 	docker-compose up -d 
-	sleep 2
+	sleep 3
 	yarn prisma migrate dev
 	yarn db:seed
+	yarn dev
 	
