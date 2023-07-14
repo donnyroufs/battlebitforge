@@ -11,6 +11,8 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <title>Battlebit Forge</title>
+      <meta name="robots" content="all" />
+      <meta name="google" content="notranslate" key="notranslate" />
       <meta
         name="description"
         content="Forge and showcase your preferred loadouts for others to view and vote on. Effortlessly access analytics on top-performing weapons, attachments, and more."
