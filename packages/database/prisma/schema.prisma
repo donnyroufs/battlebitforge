@@ -78,7 +78,8 @@ model SlotAttachments {
 model Weapons {
   id       Int    @id @default(autoincrement())
   name     String @unique
-  imageUrl String 
+  imageUrl String
+  category String
 
   weaponSlotAttachments WeaponSlotAttachments[]
   loadouts              Loadouts[]
@@ -139,6 +140,12 @@ model LoadoutVotes {
   loadoutsId Int
 
   @@unique([userId, loadoutsId])
+}
+
+model DataHistory {
+  id        Int    @id @default(autoincrement())
+  data      Json
+  timestamp BigInt
 }
 
 enum LoadoutVote {

@@ -1,91 +1,150 @@
-import { PrismaClient } from "@prisma/client";
+import {
+  PrismaClient,
+  SlotAttachments,
+  WeaponSlotAttachments,
+} from "@prisma/client";
+const seed = require("../../../apps/scraper/data/1689295106504/seed.json") as {
+  weapons: {
+    name: string;
+    type: string;
+    attachments: { slot: string; attachments: string[] }[];
+  }[];
+  attachments: string[];
+  slots: string[];
+  createdAt: number;
+};
+const { attachments, createdAt, weapons, slots } = seed;
 
 const prisma = new PrismaClient();
 
 async function main() {
   try {
-    const transaction = await prisma.$transaction([
-      // Create Attachments
-      prisma.attachments.createMany({
-        data: [
-          { id: 1, name: "Kobra Red Dot" },
-          { id: 2, name: "Holographic Sight" },
-          { id: 3, name: "PK-A" },
-          { id: 4, name: "ACOG" },
-          { id: 5, name: "Flash Suppressor" },
-          { id: 6, name: "Suppressor" },
-          { id: 7, name: "Foregrip" },
-          { id: 8, name: "Extended Magazines" },
-        ],
-        skipDuplicates: true,
-      }),
+    // Create Attachments
+    await prisma.attachments.createMany({
+      data: attachments.map((name) => ({
+        name,
+      })),
+      skipDuplicates: true,
+    });
 
-      // Create Slots
-      prisma.slots.createMany({
-        data: [
-          { id: 1, name: "Optics" },
-          { id: 2, name: "Barrel" },
-          { id: 3, name: "Underbarrel" },
-          { id: 4, name: "Grip" },
-          { id: 5, name: "Magazine" },
-        ],
-        skipDuplicates: true,
-      }),
+    // Create Slots
+    await prisma.slots.createMany({
+      data: slots.map((name) => ({
+        name,
+      })),
+      skipDuplicates: true,
+    });
 
-      // Create SlotAttachments
-      prisma.slotAttachments.createMany({
-        data: [
-          { id: 1, slotsId: 1, attachmentsId: 1 },
-          { id: 2, slotsId: 1, attachmentsId: 2 },
-          { id: 3, slotsId: 1, attachmentsId: 3 },
-          { id: 4, slotsId: 2, attachmentsId: 4 },
-          { id: 5, slotsId: 2, attachmentsId: 5 },
-          { id: 6, slotsId: 3, attachmentsId: 6 },
-          { id: 7, slotsId: 3, attachmentsId: 7 },
-          { id: 8, slotsId: 4, attachmentsId: 8 },
-          { id: 9, slotsId: 4, attachmentsId: 1 },
-          { id: 10, slotsId: 5, attachmentsId: 2 },
-          { id: 11, slotsId: 5, attachmentsId: 3 },
-          { id: 12, slotsId: 3, attachmentsId: 4 },
-          { id: 13, slotsId: 5, attachmentsId: 8 },
-        ],
-        skipDuplicates: true,
-      }),
+    // Query created Attachments and Slots
+    const createdAttachments = await prisma.attachments.findMany();
+    const createdSlots = await prisma.slots.findMany();
 
-      // Create Weapons
-      prisma.weapons.createMany({
-        data: [
-          { id: 1, name: "M4A1", imageUrl: "/weapons/M4A1.png" },
-          { id: 2, name: "HK-419", imageUrl: "/weapons/HK419.png" },
-          { id: 3, name: "ASVAL", imageUrl: "/weapons/ASVAL.png" },
-          {
-            id: 4,
-            name: "Desert Eagle",
-            imageUrl: "/weapons/DESERT-EAGLE.png",
-          },
-        ],
-        skipDuplicates: true,
-      }),
+    const slotAttachmentsData: Omit<SlotAttachments, "id">[] = [];
+    for (const weapon of weapons) {
+      for (const wa of weapon.attachments) {
+        const slotId = createdSlots.find((x) => x.name === wa.slot)?.id;
 
-      // Create WeaponSlotAttachments
-      prisma.weaponSlotAttachments.createMany({
-        data: [
-          { id: 1, weaponsId: 1, slotAttachmentsId: 1 },
-          { id: 2, weaponsId: 1, slotAttachmentsId: 2 },
-          { id: 3, weaponsId: 1, slotAttachmentsId: 3 },
-          { id: 4, weaponsId: 1, slotAttachmentsId: 4 },
-          { id: 5, weaponsId: 1, slotAttachmentsId: 5 },
-          { id: 6, weaponsId: 1, slotAttachmentsId: 6 },
-          { id: 7, weaponsId: 1, slotAttachmentsId: 7 },
-          { id: 8, weaponsId: 1, slotAttachmentsId: 9 },
-          { id: 9, weaponsId: 1, slotAttachmentsId: 10 },
-          { id: 10, weaponsId: 1, slotAttachmentsId: 11 },
-          { id: 11, weaponsId: 1, slotAttachmentsId: 13 },
-          { id: 12, weaponsId: 2, slotAttachmentsId: 1 },
-        ],
-        skipDuplicates: true,
-      }),
-    ]);
+        if (!slotId) {
+          console.error("failed to find slot", { wa, slotId });
+          continue;
+        }
+
+        for (const attachment of wa.attachments) {
+          const attachmentId = createdAttachments.find(
+            (x) => x.name === attachment
+          )?.id;
+
+          if (!attachmentId) {
+            console.error("failed to find attachment", { wa, attachmentId });
+            continue;
+          }
+
+          slotAttachmentsData.push({
+            slotsId: slotId,
+            attachmentsId: attachmentId,
+          });
+        }
+      }
+    }
+
+    await prisma.slotAttachments.createMany({
+      skipDuplicates: true,
+      data: slotAttachmentsData,
+    });
+
+    // Create Weapons
+    await prisma.weapons.createMany({
+      data: weapons.map((weapon) => ({
+        name: weapon.name,
+        category: weapon.type,
+        imageUrl: `/weapons/${weapon.name
+          .replace(" ", "")
+          .replace("-", "")}.png`,
+      })),
+      skipDuplicates: true,
+    });
+
+    const createdSlotAttachments = await prisma.slotAttachments.findMany();
+    const createdWeapons = await prisma.weapons.findMany();
+
+    const weaponSlotAttachmentsData: Omit<WeaponSlotAttachments, "id">[] = [];
+
+    for (const weapon of weapons) {
+      for (const wa of weapon.attachments) {
+        const slotId = createdSlots.find((x) => x.name === wa.slot)?.id;
+
+        if (!slotId) {
+          console.error("failed to find slot", { wa, slotId });
+          continue;
+        }
+
+        for (const attachment of wa.attachments) {
+          const attachmentId = createdAttachments.find(
+            (x) => x.name === attachment
+          )?.id;
+
+          if (!attachmentId) {
+            console.error("failed to find attachment", { wa, attachmentId });
+            continue;
+          }
+
+          const slotAttachmentsId = createdSlotAttachments.find(
+            (x) => x.attachmentsId === attachmentId && x.slotsId === slotId
+          )?.id;
+
+          // This weapon does not have this combination
+          if (!slotAttachmentsId) {
+            continue;
+          }
+
+          const weaponId = createdWeapons.find(
+            (x) => x.name === weapon.name
+          )?.id;
+
+          if (!weaponId) {
+            console.error("Failed to find weapon", { weaponId });
+            continue;
+          }
+
+          weaponSlotAttachmentsData.push({
+            slotAttachmentsId,
+            weaponsId: weaponId,
+          });
+        }
+      }
+    }
+
+    await prisma.weaponSlotAttachments.createMany({
+      skipDuplicates: true,
+      data: weaponSlotAttachmentsData,
+    });
+
+    await prisma.dataHistory.create({
+      data: {
+        timestamp: createdAt,
+        data: seed,
+      },
+    });
 
     console.log("Seed data created successfully!");
   } catch (error) {

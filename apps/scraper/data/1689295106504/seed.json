@@ -1,0 +1,3595 @@
+{
+  "weapons": [
+    {
+      "name": "AK-74",
+      "type": "Automatic Rifles",
+      "attachments": []
+    },
+    {
+      "name": "M4A1",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "H S401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AK-15",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "PK-AS",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "1P78",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A",
+            "Extended-B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SCAR-H",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AUG A3",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A",
+            "Extended-B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SG550",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAMAS",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ACR",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A",
+            "Quick-B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "G36C",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A",
+            "Drum-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HK419",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAL",
+      "type": "Automatic Rifles",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Aim Comp",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Heavy",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "Long Barrel",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Short-A",
+            "Quick-A",
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AK5C",
+      "type": "Automatic Rifles",
+      "attachments": []
+    },
+    {
+      "name": "MP7",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A",
+            "Extended-B"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UMP-45",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PP-2000",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Extended-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PP19",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kriss Vector",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "F You Sight",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Osprey 9",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Drum-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MP5",
+      "type": "Submachine Guns",
+      "attachments": [
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Holo P K-120",
+            "Holographic",
+            "Razor",
+            "HS401 G5",
+            "Prisma",
+            "Acog",
+            "Echo",
+            "Burris A R332",
+            "Slip",
+            "M 125",
+            "T R I4 X32",
+            "Flir"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "Holo Dot",
+            "F You Canted"
+          ]
+        },
+        {
+          "slot": "Under barrel rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "RK-6 Foregrip",
+            "Hera C Q R Front",
+            "FAB-DTFG",
+            "Angled Grip",
+            "Vertical Grip",
+            "SE-5 Grip",
+            "VTAC Grip",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Vertical Skeleton Grip",
+            "BCM-Gun Fighter",
+            "Stabil Grip"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "Searchlight",
+            "RedLaser",
+            "Rangefinder",
+            "GreenLaser",
+            "Tactical Flashlight"
+          ]
+        },
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "V A M B-762",
+            "Tactical",
+            "DGN-308",
+            "Compensator",
+            "N T-4 556",
+            "Flash Hider",
+            "S O N-6 762",
+            "Muzzle Break",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Short-A"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Honey Badger",
+      "type": "Personal Defense Weapons",
+      "attachments": [
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Groza",
+      "type": "Personal Defense Weapons",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "P90",
+      "type": "Personal Defense Weapons",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AS Val",
+      "type": "Carbines",
+      "attachments": [
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scorpion EVO",
+      "type": "Carbines",
+      "attachments": [
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L86A1",
+      "type": "Light Support Guns",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Flash Hider",
+            "S D N-6 762",
+            "Muzzle Break",
+            "DGN-308",
+            "Tactical",
+            "N T-4 556",
+            "V A M B-762",
+            "Long Barrel",
+            "Heavy",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Drum-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "Angled Grip",
+            "FAB-DTFG",
+            "Shift Short Angled Grip",
+            "V T A C U V G Tactical Grip",
+            "BCM-Gun Fighter",
+            "SE-5 Grip",
+            "Stabil Grip",
+            "Hera C Q R Front",
+            "RK-6 Foregrip",
+            "Vertical Grip",
+            "Vertical Skeleton Grip",
+            "Magpul Angled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MG36",
+      "type": "Light Support Guns",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Flash Hider",
+            "S D N-6 762",
+            "Muzzle Break",
+            "DGN-308",
+            "Tactical",
+            "N T-4 556",
+            "V A M B-762",
+            "Long Barrel",
+            "Heavy",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Drum-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Stubby Grip",
+            "B-25 U R K",
+            "Angled Grip",
+            "FAB-DTFG",
+            "Shift Short Angled Grip",
+            "V T A C U V G Tactical Grip",
+            "BCM-Gun Fighter",
+            "SE-5 Grip",
+            "Stabil Grip",
+            "Hera C Q R Front",
+            "RK-6 Foregrip",
+            "Vertical Grip",
+            "Vertical Skeleton Grip",
+            "Magpul Angled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "M249",
+      "type": "Light Machine Guns",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Flash Hider",
+            "S D N-6 762",
+            "Muzzle Break",
+            "DGN-308",
+            "Tactical",
+            "N T-4 556",
+            "V A M B-762",
+            "Long Barrel",
+            "Heavy",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Bipod",
+            "Stubby Grip",
+            "B-25 U R K",
+            "Angled Grip",
+            "FAB-DTFG",
+            "Shift Short Angled Grip",
+            "V T A C U V G Tactical Grip",
+            "BCM-Gun Fighter",
+            "SE-5 Grip",
+            "Stabil Grip",
+            "Hera C Q R Front",
+            "RK-6 Foregrip",
+            "Vertical Grip",
+            "Vertical Skeleton Grip",
+            "Magpul Angled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ultimax 100",
+      "type": "Light Machine Guns",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Flash Hider",
+            "S D N-6 762",
+            "Muzzle Break",
+            "DGN-308",
+            "Tactical",
+            "N T-4 556",
+            "V A M B-762",
+            "Long Barrel",
+            "Heavy",
+            "Suppressor Short",
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Aim Comp",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Strikefire",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "H S401 G5",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Bipod",
+            "Stubby Grip",
+            "B-25 U R K",
+            "Angled Grip",
+            "FAB-DTFG",
+            "Shift Short Angled Grip",
+            "V T A C U V G Tactical Grip",
+            "BCM-Gun Fighter",
+            "SE-5 Grip",
+            "Stabil Grip",
+            "Hera C Q R Front",
+            "RK-6 Foregrip",
+            "Vertical Grip",
+            "Vertical Skeleton Grip",
+            "Magpul Angled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MK-20",
+      "type": "Designated Marksman Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Short-A",
+            "Quick-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "None",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "M110",
+      "type": "Designated Marksman Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Short-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "None",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MK-14 EBR",
+      "type": "Designated Marksman Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Quick-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "None",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SVD",
+      "type": "Designated Marksman Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Muzzle Break",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "None",
+            "Holographic",
+            "Kobra",
+            "Red Dot",
+            "Reflex",
+            "Razor",
+            "F You Sight",
+            "Holo P K-120",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Slip",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot Top",
+            "C Red Dot Top",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Stabil Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "B C M-Gun Fighter",
+            "Shift Short Angled Grip",
+            "S E-5 Grip",
+            "R K-6 Foregrip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SSG 69",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SV-98",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L96",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Short-A",
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "REM700",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "M200",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Short-A"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MSR",
+      "type": "Sniper Rifles",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Basic",
+            "Compensator",
+            "Heavy",
+            "Long Barrel",
+            "Ranger",
+            "Tactical",
+            "Flash Hider",
+            "O G N-308",
+            "V A M B-762",
+            "S O N-6 762",
+            "N T-4 556",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Bolt",
+          "attachments": [
+            "Bolt Action A",
+            "Bolt Action B",
+            "Bolt Action C",
+            "Bolt Action D",
+            "Bolt Action E"
+          ]
+        },
+        {
+          "slot": "Canted Sight",
+          "attachments": [
+            "Ironsight",
+            "Red Dot",
+            "F You Canted",
+            "Holo Dot"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main Sight",
+          "attachments": [
+            "None",
+            "Acog",
+            "M 125",
+            "Prisma",
+            "Flir",
+            "Echo",
+            "T R I4 X32",
+            "Burris A R332",
+            "6x Scope",
+            "8x Scope",
+            "15x Scope",
+            "20x Scope",
+            "P T R-40 Hunter"
+          ]
+        },
+        {
+          "slot": "Side Rail",
+          "attachments": [
+            "Flashlight",
+            "Rangefinder",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser",
+            "Searchlight"
+          ]
+        },
+        {
+          "slot": "Top Sight",
+          "attachments": [
+            "Delta Sight Top",
+            "Red Dot",
+            "C Red Dot",
+            "F You Top"
+          ]
+        },
+        {
+          "slot": "Underbarrel Rail",
+          "attachments": [
+            "Angled Grip",
+            "Bipod",
+            "Vertical Grip",
+            "Stubby Grip",
+            "Vertical Skeleton Grip",
+            "F A B-O T F G",
+            "Magpul Angled",
+            "Shift Short Angled Grip",
+            "Hera C Q R Front",
+            "B-25 U R K",
+            "V T A C U V G Tactical Grip"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "M9",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Compensator",
+            "Tactical",
+            "Flash Hider",
+            "D G N-308",
+            "Suppressor Long",
+            "Suppressor Short",
+            "Osprey 9"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MP443",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Compensator",
+            "Tactical",
+            "Flash Hider",
+            "D G N-308",
+            "Suppressor Long",
+            "Suppressor Short",
+            "Osprey 9"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "USP",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Compensator",
+            "Tactical",
+            "Flash Hider",
+            "D G N-308",
+            "Suppressor Long",
+            "Suppressor Short",
+            "Osprey 9"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Glock 18",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Compensator",
+            "Tactical",
+            "Flash Hider",
+            "D G N-308",
+            "Suppressor Long",
+            "Suppressor Short",
+            "Osprey 9"
+          ]
+        },
+        {
+          "slot": "Magazine",
+          "attachments": [
+            "Extended-A"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unica",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight",
+            "Pistol 8x Scope"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desert Eagle",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Compensator",
+            "Tactical",
+            "Flash Hider",
+            "D G N-308",
+            "Suppressor Long",
+            "Suppressor Short"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RSH12",
+      "type": "Pistols",
+      "attachments": [
+        {
+          "slot": "Barrel",
+          "attachments": [
+            "Suppressor Long"
+          ]
+        },
+        {
+          "slot": "Main sight",
+          "attachments": [
+            "Pistol Red Dot",
+            "Pistol Delta Sight",
+            "Pistol 8x Scope"
+          ]
+        },
+        {
+          "slot": "Side rail",
+          "attachments": [
+            "Flashlight",
+            "RedLaser",
+            "Tactical Flashlight",
+            "GreenLaser"
+          ]
+        }
+      ]
+    }
+  ],
+  "attachments": [
+    "15x Scope",
+    "1P78",
+    "20x Scope",
+    "6x Scope",
+    "8x Scope",
+    "Acog",
+    "Aim Comp",
+    "Angled Grip",
+    "B C M-Gun Fighter",
+    "B-25 U R K",
+    "Basic",
+    "BCM-Gun Fighter",
+    "Bipod",
+    "Bolt Action A",
+    "Bolt Action B",
+    "Bolt Action C",
+    "Bolt Action D",
+    "Bolt Action E",
+    "Burris A R332",
+    "C Red Dot",
+    "C Red Dot Top",
+    "Compensator",
+    "D G N-308",
+    "Delta Sight Top",
+    "DGN-308",
+    "Drum-A",
+    "Echo",
+    "Extended-A",
+    "Extended-B",
+    "F A B-O T F G",
+    "F You Canted",
+    "F You Sight",
+    "F You Top",
+    "FAB-DTFG",
+    "Flash Hider",
+    "Flashlight",
+    "Flir",
+    "GreenLaser",
+    "H S401 G5",
+    "Heavy",
+    "Hera C Q R Front",
+    "Holo Dot",
+    "Holo P K-120",
+    "Holographic",
+    "HS401 G5",
+    "Ironsight",
+    "Kobra",
+    "Long Barrel",
+    "M 125",
+    "Magpul Angled",
+    "Muzzle Break",
+    "N T-4 556",
+    "None",
+    "O G N-308",
+    "Osprey 9",
+    "P T R-40 Hunter",
+    "Pistol 8x Scope",
+    "Pistol Delta Sight",
+    "Pistol Red Dot",
+    "PK-AS",
+    "Prisma",
+    "Quick-A",
+    "Quick-B",
+    "R K-6 Foregrip",
+    "Rangefinder",
+    "Ranger",
+    "Razor",
+    "Red Dot",
+    "Red Dot Top",
+    "RedLaser",
+    "Reflex",
+    "RK-6 Foregrip",
+    "S D N-6 762",
+    "S E-5 Grip",
+    "S O N-6 762",
+    "SE-5 Grip",
+    "Searchlight",
+    "Shift Short Angled Grip",
+    "Short-A",
+    "Slip",
+    "Stabil Grip",
+    "Strikefire",
+    "Stubby Grip",
+    "Suppressor Long",
+    "Suppressor Short",
+    "T R I4 X32",
+    "Tactical",
+    "Tactical Flashlight",
+    "V A M B-762",
+    "V T A C U V G Tactical Grip",
+    "Vertical Grip",
+    "Vertical Skeleton Grip",
+    "VTAC Grip"
+  ],
+  "slots": [
+    "Main sight",
+    "Canted Sight",
+    "Top Sight",
+    "Under barrel rail",
+    "Side rail",
+    "Barrel",
+    "Magazine",
+    "Side Rail",
+    "Underbarrel Rail",
+    "Bolt",
+    "Main Sight"
+  ],
+  "createdAt": 1689295106504
+}
